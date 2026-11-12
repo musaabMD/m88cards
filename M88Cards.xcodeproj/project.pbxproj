@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A2A8D9DFDDAF37D88357273 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2B44D8250F7120BD750ABB /* ScoreView.swift */; };
 		568727409F30D06E348C3C09 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE7CAC82E6DB3964C8E1DC3 /* HomeView.swift */; };
-		743F8915A034AD2D72FC1EE9 /* Decks in Resources */ = {isa = PBXBuildFile; fileRef = 433759ED875049594129E672 /* Decks */; };
+		5929FC9B6DD1D52DCF190B4E /* content in Resources */ = {isa = PBXBuildFile; fileRef = 034C9757E4B49C8AD027F398 /* content */; };
 		9C1689962A05791D8437F356 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF76784C109477096AD09C3D /* Models.swift */; };
 		B1E34D3215B190E328B47B18 /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE8323E63E04FBE3BC9DFE /* TopicView.swift */; };
 		B825F80F6F7941A8BCA69A3A /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FCCA5ACAEC3A91E8B11055 /* QuizView.swift */; };
@@ -19,9 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		034C9757E4B49C8AD027F398 /* content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = content; sourceTree = SOURCE_ROOT; };
 		0DE7CAC82E6DB3964C8E1DC3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0E2BB1AC0F4DB811AF00719C /* M88CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M88CardsApp.swift; sourceTree = "<group>"; };
-		433759ED875049594129E672 /* Decks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Decks; path = M88Cards/Decks; sourceTree = SOURCE_ROOT; };
 		5D2B44D8250F7120BD750ABB /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		75CE1EDE7C1220B0337DBC25 /* QuizSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSession.swift; sourceTree = "<group>"; };
 		A1FE8323E63E04FBE3BC9DFE /* TopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
@@ -36,7 +36,6 @@
 		930AD0D852D29DD4E081CBA6 /* M88Cards */ = {
 			isa = PBXGroup;
 			children = (
-				433759ED875049594129E672 /* Decks */,
 				0DE7CAC82E6DB3964C8E1DC3 /* HomeView.swift */,
 				A87B00EDA5324FFF3E35F0D5 /* Info.plist */,
 				0E2BB1AC0F4DB811AF00719C /* M88CardsApp.swift */,
@@ -61,6 +60,7 @@
 		D183FF97383A22EF17D4E938 = {
 			isa = PBXGroup;
 			children = (
+				034C9757E4B49C8AD027F398 /* content */,
 				930AD0D852D29DD4E081CBA6 /* M88Cards */,
 				AEE44A7A6F174835B730BD9A /* Products */,
 			);
@@ -125,7 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				743F8915A034AD2D72FC1EE9 /* Decks in Resources */,
+				5929FC9B6DD1D52DCF190B4E /* content in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

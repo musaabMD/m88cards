@@ -30,7 +30,7 @@ final class Store {
 
     func loadDecks() {
         var found: [Subject] = []
-        let bundled = Bundle.main.urls(forResourcesWithExtension: "json", subdirectory: "Decks") ?? []
+        let bundled = Bundle.main.urls(forResourcesWithExtension: "json", subdirectory: "content") ?? []
         let imported = (try? fm.contentsOfDirectory(at: importedDecksDir, includingPropertiesForKeys: nil)) ?? []
         for url in bundled + imported where url.pathExtension == "json" {
             if let data = try? Data(contentsOf: url) {

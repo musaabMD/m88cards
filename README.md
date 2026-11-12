@@ -13,9 +13,9 @@ open M88Cards.xcodeproj
 
 Select your team under Signing & Capabilities, then run on your iPhone.
 
-## Decks
+## Content
 
-Bundled decks live in `M88Cards/Decks/*.json`. One file = one subject:
+All card content lives in one folder, `content/`, at the repo root. One JSON file = one subject:
 
 ```json
 { "id": "anatomy", "name": "Anatomy", "color": "#2563EB",

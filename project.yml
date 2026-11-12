@@ -19,8 +19,7 @@ targets:
     platform: iOS
     sources:
       - path: M88Cards
-        excludes: ["Decks"]
-      - path: M88Cards/Decks
+      - path: content
         type: folder
         buildPhase: resources
     info:
