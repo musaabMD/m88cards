@@ -10,7 +10,9 @@
 		4A2A8D9DFDDAF37D88357273 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2B44D8250F7120BD750ABB /* ScoreView.swift */; };
 		568727409F30D06E348C3C09 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE7CAC82E6DB3964C8E1DC3 /* HomeView.swift */; };
 		5929FC9B6DD1D52DCF190B4E /* content in Resources */ = {isa = PBXBuildFile; fileRef = 034C9757E4B49C8AD027F398 /* content */; };
+		83FDB2261B545B6F53D85559 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D82A71A2FF8447A05C29E9 /* ReviewView.swift */; };
 		9C1689962A05791D8437F356 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF76784C109477096AD09C3D /* Models.swift */; };
+		A8006706E62236E8D19214B9 /* Glass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F970283CF95839D2EF15C4 /* Glass.swift */; };
 		B1E34D3215B190E328B47B18 /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE8323E63E04FBE3BC9DFE /* TopicView.swift */; };
 		B825F80F6F7941A8BCA69A3A /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FCCA5ACAEC3A91E8B11055 /* QuizView.swift */; };
 		C25326045ADEA5F2D00FABE4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FCC8C7D17DD9E99994673 /* Store.swift */; };
@@ -23,12 +25,14 @@
 		0DE7CAC82E6DB3964C8E1DC3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0E2BB1AC0F4DB811AF00719C /* M88CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M88CardsApp.swift; sourceTree = "<group>"; };
 		5D2B44D8250F7120BD750ABB /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		62D82A71A2FF8447A05C29E9 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		75CE1EDE7C1220B0337DBC25 /* QuizSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSession.swift; sourceTree = "<group>"; };
 		A1FE8323E63E04FBE3BC9DFE /* TopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
 		A87B00EDA5324FFF3E35F0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D8FCCA5ACAEC3A91E8B11055 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		DAAF7E2291529FAC8104006E /* M88Cards.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = M88Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF76784C109477096AD09C3D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		E8F970283CF95839D2EF15C4 /* Glass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glass.swift; sourceTree = "<group>"; };
 		FF9FCC8C7D17DD9E99994673 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,12 +40,14 @@
 		930AD0D852D29DD4E081CBA6 /* M88Cards */ = {
 			isa = PBXGroup;
 			children = (
+				E8F970283CF95839D2EF15C4 /* Glass.swift */,
 				0DE7CAC82E6DB3964C8E1DC3 /* HomeView.swift */,
 				A87B00EDA5324FFF3E35F0D5 /* Info.plist */,
 				0E2BB1AC0F4DB811AF00719C /* M88CardsApp.swift */,
 				DF76784C109477096AD09C3D /* Models.swift */,
 				75CE1EDE7C1220B0337DBC25 /* QuizSession.swift */,
 				D8FCCA5ACAEC3A91E8B11055 /* QuizView.swift */,
+				62D82A71A2FF8447A05C29E9 /* ReviewView.swift */,
 				5D2B44D8250F7120BD750ABB /* ScoreView.swift */,
 				FF9FCC8C7D17DD9E99994673 /* Store.swift */,
 				A1FE8323E63E04FBE3BC9DFE /* TopicView.swift */,
@@ -136,11 +142,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8006706E62236E8D19214B9 /* Glass.swift in Sources */,
 				568727409F30D06E348C3C09 /* HomeView.swift in Sources */,
 				CDF045BB0641C0E324501C5F /* M88CardsApp.swift in Sources */,
 				9C1689962A05791D8437F356 /* Models.swift in Sources */,
 				DBD3934698B27B982286F418 /* QuizSession.swift in Sources */,
 				B825F80F6F7941A8BCA69A3A /* QuizView.swift in Sources */,
+				83FDB2261B545B6F53D85559 /* ReviewView.swift in Sources */,
 				4A2A8D9DFDDAF37D88357273 /* ScoreView.swift in Sources */,
 				C25326045ADEA5F2D00FABE4 /* Store.swift in Sources */,
 				B1E34D3215B190E328B47B18 /* TopicView.swift in Sources */,

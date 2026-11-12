@@ -47,10 +47,13 @@ struct HomeView: View {
             .searchable(text: $search, prompt: "Search \(store.allCards.count) cards")
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    Button { showStats = true } label: { Image(systemName: "chart.bar") }
+                    NavigationLink { ReviewView() } label: { Image(systemName: "tray.full") }
                 }
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button { showImporter = true } label: { Image(systemName: "plus") }
+                    Menu {
+                        Button { showImporter = true } label: { Label("Import deck…", systemImage: "square.and.arrow.down") }
+                        Button { showStats = true } label: { Label("Stats", systemImage: "chart.bar") }
+                    } label: { Image(systemName: "ellipsis") }
                 }
             }
             .safeAreaInset(edge: .bottom) { dueBar }
@@ -118,19 +121,20 @@ struct HomeView: View {
 
     private var dueBar: some View {
         let due = store.dueCards(in: store.allCards)
-        return Button {
-            if !due.isEmpty { quiz = QuizScope(id: "due", name: "Due today", cards: due) }
-        } label: {
-            Label(due.isEmpty ? "Nothing due. Pick a subject to study." : "Review \(due.count) due cards", systemImage: "play.fill")
-                .font(.headline)
-                .frame(maxWidth: .infinity, minHeight: 54)
-                .foregroundStyle(due.isEmpty ? Color.secondary : Color.white)
-                .background(due.isEmpty ? Color(.secondarySystemBackground) : Color.primary, in: RoundedRectangle(cornerRadius: 16))
+        return Group {
+            if due.isEmpty {
+                Text("Nothing due. Pick a subject to study.").font(.subheadline).foregroundStyle(.secondary)
+                    .frame(maxWidth: .infinity, minHeight: 44).glassCapsule()
+            } else {
+                Button { quiz = QuizScope(id: "due", name: "Due today", cards: due) } label: {
+                    Label("Review \(due.count) due cards", systemImage: "play.fill").font(.headline)
+                        .frame(maxWidth: .infinity, minHeight: 36)
+                }
+                .prominentGlassButton()
+                .controlSize(.large)
+            }
         }
-        .buttonStyle(.plain)
-        .disabled(due.isEmpty)
-        .padding(.horizontal, 16).padding(.top, 8).padding(.bottom, 4)
-        .background(.bar)
+        .padding(.horizontal, 16).padding(.vertical, 6)
     }
 }
 

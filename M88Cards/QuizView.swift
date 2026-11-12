@@ -24,15 +24,15 @@ struct QuizView: View {
                 ToolbarItem(placement: .principal) {
                     VStack(spacing: 1) {
                         Text(session.scope.name).font(.subheadline.weight(.semibold)).lineLimit(1)
-                        Text("Card \(min(session.index + 1, session.total)) of \(session.total)").font(.caption).foregroundStyle(.secondary)
+                        Text("\(min(session.index + 1, session.total)) of \(session.total)").font(.caption).foregroundStyle(.secondary)
                     }
                 }
                 ToolbarItem(placement: .topBarTrailing) {
-                    HStack(spacing: 6) {
-                        Text("\(session.rightSoFar)").padding(.horizontal, 8).padding(.vertical, 3).background(.green.opacity(0.15), in: RoundedRectangle(cornerRadius: 8)).foregroundStyle(.green)
-                        Text("\(session.againSoFar)").padding(.horizontal, 8).padding(.vertical, 3).background(.red.opacity(0.15), in: RoundedRectangle(cornerRadius: 8)).foregroundStyle(.red)
+                    HStack(spacing: 8) {
+                        Label("\(session.rightSoFar)", systemImage: "checkmark").foregroundStyle(.green)
+                        Label("\(session.againSoFar)", systemImage: "arrow.counterclockwise").foregroundStyle(.red)
                     }
-                    .font(.footnote.weight(.semibold))
+                    .font(.footnote.weight(.semibold)).labelStyle(.titleAndIcon)
                 }
             }
         }
@@ -41,32 +41,24 @@ struct QuizView: View {
     }
 
     private func cardScreen(_ card: Card) -> some View {
-        VStack(spacing: 16) {
-            ProgressView(value: session.progress).tint(.accentColor).padding(.horizontal, 16)
+        VStack(spacing: 14) {
+            ProgressView(value: session.progress).tint(.primary).padding(.horizontal, 20)
 
             Button { withAnimation(.snappy) { session.revealed = true } } label: {
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 18) {
-                        Text("QUESTION").font(.caption2.weight(.semibold)).foregroundStyle(.secondary)
+                    VStack(alignment: .leading, spacing: 20) {
                         Text(card.q).font(.title2.weight(.semibold)).multilineTextAlignment(.leading)
                         if session.revealed {
                             Divider()
-                            Text("ANSWER").font(.caption2.weight(.semibold)).foregroundStyle(Color.accentColor)
                             Text(card.a).font(.title3)
-                            if let n = card.note { Text(n).font(.caption).foregroundStyle(.secondary) }
+                            if let n = card.note { Text(n).font(.caption).foregroundStyle(.tertiary) }
                         }
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(24)
                 }
-                .overlay(alignment: .bottom) {
-                    if !session.revealed {
-                        Label("Tap to reveal", systemImage: "plus.circle").font(.footnote).foregroundStyle(.secondary).padding(.bottom, 20)
-                    }
-                }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 24))
-                .shadow(color: .black.opacity(0.08), radius: 10, y: 2)
+                .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 22))
                 .padding(.horizontal, 16)
             }
             .buttonStyle(.plain)
@@ -77,12 +69,12 @@ struct QuizView: View {
                     ForEach(Rating.allCases, id: \.self) { r in
                         Button { answer(r) } label: {
                             VStack(spacing: 2) {
-                                Text(r.label).font(.subheadline.weight(.semibold))
-                                Text(Scheduler.preview(r, for: store.state(for: card))).font(.caption2).opacity(0.8)
+                                Text(r.label).font(.subheadline.weight(.bold))
+                                Text(Scheduler.preview(r, for: store.state(for: card))).font(.caption2).opacity(0.85)
                             }
-                            .frame(maxWidth: .infinity, minHeight: 60)
-                            .background(r.tint.opacity(0.15), in: RoundedRectangle(cornerRadius: 14))
-                            .foregroundStyle(r.tint)
+                            .frame(maxWidth: .infinity, minHeight: 58)
+                            .background(r.tint, in: RoundedRectangle(cornerRadius: 14))
+                            .foregroundStyle(.white)
                         }
                     }
                 }
@@ -90,7 +82,7 @@ struct QuizView: View {
             } else {
                 Button { withAnimation(.snappy) { session.revealed = true } } label: {
                     Text("Show answer").font(.headline).frame(maxWidth: .infinity, minHeight: 54)
-                        .foregroundStyle(Color(.systemBackground)).background(Color.primary, in: RoundedRectangle(cornerRadius: 16))
+                        .foregroundStyle(Color(.systemBackground)).background(Color.primary, in: RoundedRectangle(cornerRadius: 14))
                 }
                 .padding(.horizontal, 16)
             }
