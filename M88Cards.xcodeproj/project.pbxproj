@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A2A8D9DFDDAF37D88357273 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2B44D8250F7120BD750ABB /* ScoreView.swift */; };
+		568727409F30D06E348C3C09 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE7CAC82E6DB3964C8E1DC3 /* HomeView.swift */; };
+		743F8915A034AD2D72FC1EE9 /* Decks in Resources */ = {isa = PBXBuildFile; fileRef = 433759ED875049594129E672 /* Decks */; };
+		9C1689962A05791D8437F356 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF76784C109477096AD09C3D /* Models.swift */; };
+		B1E34D3215B190E328B47B18 /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE8323E63E04FBE3BC9DFE /* TopicView.swift */; };
+		B825F80F6F7941A8BCA69A3A /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FCCA5ACAEC3A91E8B11055 /* QuizView.swift */; };
+		C25326045ADEA5F2D00FABE4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FCC8C7D17DD9E99994673 /* Store.swift */; };
+		CDF045BB0641C0E324501C5F /* M88CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2BB1AC0F4DB811AF00719C /* M88CardsApp.swift */; };
+		DBD3934698B27B982286F418 /* QuizSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE1EDE7C1220B0337DBC25 /* QuizSession.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DE7CAC82E6DB3964C8E1DC3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0E2BB1AC0F4DB811AF00719C /* M88CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M88CardsApp.swift; sourceTree = "<group>"; };
+		433759ED875049594129E672 /* Decks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Decks; path = M88Cards/Decks; sourceTree = SOURCE_ROOT; };
+		5D2B44D8250F7120BD750ABB /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		75CE1EDE7C1220B0337DBC25 /* QuizSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSession.swift; sourceTree = "<group>"; };
+		A1FE8323E63E04FBE3BC9DFE /* TopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
+		A87B00EDA5324FFF3E35F0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D8FCCA5ACAEC3A91E8B11055 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		DAAF7E2291529FAC8104006E /* M88Cards.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = M88Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF76784C109477096AD09C3D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		FF9FCC8C7D17DD9E99994673 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		930AD0D852D29DD4E081CBA6 /* M88Cards */ = {
+			isa = PBXGroup;
+			children = (
+				433759ED875049594129E672 /* Decks */,
+				0DE7CAC82E6DB3964C8E1DC3 /* HomeView.swift */,
+				A87B00EDA5324FFF3E35F0D5 /* Info.plist */,
+				0E2BB1AC0F4DB811AF00719C /* M88CardsApp.swift */,
+				DF76784C109477096AD09C3D /* Models.swift */,
+				75CE1EDE7C1220B0337DBC25 /* QuizSession.swift */,
+				D8FCCA5ACAEC3A91E8B11055 /* QuizView.swift */,
+				5D2B44D8250F7120BD750ABB /* ScoreView.swift */,
+				FF9FCC8C7D17DD9E99994673 /* Store.swift */,
+				A1FE8323E63E04FBE3BC9DFE /* TopicView.swift */,
+			);
+			path = M88Cards;
+			sourceTree = "<group>";
+		};
+		AEE44A7A6F174835B730BD9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAAF7E2291529FAC8104006E /* M88Cards.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D183FF97383A22EF17D4E938 = {
+			isa = PBXGroup;
+			children = (
+				930AD0D852D29DD4E081CBA6 /* M88Cards */,
+				AEE44A7A6F174835B730BD9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A79EA92CFC4C79D207B5817 /* M88Cards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC71DD89F316F2AD354BDF3 /* Build configuration list for PBXNativeTarget "M88Cards" */;
+			buildPhases = (
+				02C1067D573EDEF155D0EC53 /* Sources */,
+				6C13989AB0170AD88D5E53F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = M88Cards;
+			packageProductDependencies = (
+			);
+			productName = M88Cards;
+			productReference = DAAF7E2291529FAC8104006E /* M88Cards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88FAF56FF4B6F3F718D7A6BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8A79EA92CFC4C79D207B5817 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 196F5C00D46D510CE548764C /* Build configuration list for PBXProject "M88Cards" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D183FF97383A22EF17D4E938;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AEE44A7A6F174835B730BD9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A79EA92CFC4C79D207B5817 /* M88Cards */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C13989AB0170AD88D5E53F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743F8915A034AD2D72FC1EE9 /* Decks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02C1067D573EDEF155D0EC53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				568727409F30D06E348C3C09 /* HomeView.swift in Sources */,
+				CDF045BB0641C0E324501C5F /* M88CardsApp.swift in Sources */,
+				9C1689962A05791D8437F356 /* Models.swift in Sources */,
+				DBD3934698B27B982286F418 /* QuizSession.swift in Sources */,
+				B825F80F6F7941A8BCA69A3A /* QuizView.swift in Sources */,
+				4A2A8D9DFDDAF37D88357273 /* ScoreView.swift in Sources */,
+				C25326045ADEA5F2D00FABE4 /* Store.swift in Sources */,
+				B1E34D3215B190E328B47B18 /* TopicView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		10EAC222E8D50B0A3D1F6D35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		68492172785C4C7E5C9A2AB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		793A5DCE86567D9BB02E1EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = M88Cards/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drkard.m88cards;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC3815AFAAD93C3EA868F9B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = M88Cards/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drkard.m88cards;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		196F5C00D46D510CE548764C /* Build configuration list for PBXProject "M88Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10EAC222E8D50B0A3D1F6D35 /* Debug */,
+				68492172785C4C7E5C9A2AB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4CC71DD89F316F2AD354BDF3 /* Build configuration list for PBXNativeTarget "M88Cards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3815AFAAD93C3EA868F9B2 /* Debug */,
+				793A5DCE86567D9BB02E1EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88FAF56FF4B6F3F718D7A6BE /* Project object */;
+}

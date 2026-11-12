@@ -1,0 +1,46 @@
+name: M88Cards
+options:
+  bundleIdPrefix: com.drkard
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.10"
+    CODE_SIGN_STYLE: Automatic
+    "CODE_SIGN_IDENTITY[sdk=iphonesimulator*]": "-"
+    MARKETING_VERSION: "0.1"
+    CURRENT_PROJECT_VERSION: "1"
+    TARGETED_DEVICE_FAMILY: "1"
+    SWIFT_EMIT_LOC_STRINGS: NO
+targets:
+  M88Cards:
+    type: application
+    platform: iOS
+    sources:
+      - path: M88Cards
+        excludes: ["Decks"]
+      - path: M88Cards/Decks
+        type: folder
+        buildPhase: resources
+    info:
+      path: M88Cards/Info.plist
+      properties:
+        CFBundleDisplayName: M88 Cards
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        ITSAppUsesNonExemptEncryption: false
+        UIFileSharingEnabled: true
+        LSSupportsOpeningDocumentsInPlace: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.drkard.m88cards
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+schemes:
+  M88Cards:
+    build:
+      targets:
+        M88Cards: all
+    run:
+      config: Debug

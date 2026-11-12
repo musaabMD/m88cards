@@ -1,0 +1,398 @@
+{
+ "id": "ecg-2",
+ "name": "ECG 2 · The reading method",
+ "blurb": "Read rate, rhythm, intervals and axis on any ECG, every time.",
+ "color": "#0D9488",
+ "topics": [
+  {
+   "id": "m2-rate",
+   "name": "Rate",
+   "desc": "Count the heart rate from the grid, regular or irregular.",
+   "cards": [
+    {
+     "id": "m2-rate-01",
+     "q": "The R waves are exactly five large squares apart. The rate is",
+     "a": "60 bpm\n\nFive large squares are 1 second; one beat per second is 60 per minute.",
+     "note": "Thaler ch3 p.124–125; Khan ch2 Table 2-2"
+    },
+    {
+     "id": "m2-rate-02",
+     "q": "Put the rates in order for 1, 2, 3, 4, 5 and 6 large squares between R waves",
+     "a": "300 → 150 → 100 → 75 → 60 → 50\n\nEach value is 300 divided by the number of large squares.",
+     "note": "Thaler ch3 p.125–126; Khan ch2 Table 2-2"
+    },
+    {
+     "id": "m2-rate-03",
+     "q": "R waves are 2.5 large squares apart. What is the rate?",
+     "a": "120 bpm\n\n300 ÷ 2.5 = 120 bpm.",
+     "note": "Thaler ch3 p.126, 129; Khan ch2 Table 2-2"
+    },
+    {
+     "id": "m2-rate-04",
+     "q": "There are 25 small squares between R waves. What is the rate?",
+     "a": "60 bpm\n\n1500 ÷ 25 = 60 bpm.",
+     "note": "Thaler ch3 p.126; Khan ch2 Table 2-2"
+    },
+    {
+     "id": "m2-rate-05",
+     "q": "The next R falls between the third and fourth heavy lines. The rate is about",
+     "a": "Between 100 and 75\n\nThree squares is 100 and four is 75, so the rate lies between them.",
+     "note": "Thaler ch3 p.126"
+    },
+    {
+     "id": "m2-rate-06",
+     "q": "Explain: Under 60 is slow, over 100 fast",
+     "a": "The resting heart normally beats 60 to 100 times a minute. Below 60 is bradycardia; above 100 is tachycardia.",
+     "note": "Thaler ch3 p.119, 128"
+    },
+    {
+     "id": "m2-rate-07",
+     "q": "Explain: Three to five squares is normal",
+     "a": "Khan’s shortcut: if R waves are between three and five large squares apart, the rate is 60–100 and needs no exact sum. Calculate only when it falls outside that window.",
+     "note": "Khan ch2 Table 2-2"
+    },
+    {
+     "id": "m2-rate-08",
+     "q": "Explain: Irregular rhythm: count six seconds",
+     "a": "When RR intervals vary, no single interval gives the rate. Count the QRS complexes in 6 seconds (two 3-second marks, or 30 large squares) and multiply by 10.",
+     "note": "Thaler ch3 p.127; Khan ch2 Table 2-2"
+    },
+    {
+     "id": "m2-rate-09",
+     "q": "Explain: Slow rates: divide or count",
+     "a": "For a slow rhythm both methods still work: 300 ÷ large squares (8 squares ≈ 38 bpm, 10 squares = 30 bpm), or a 6-second count × 10. Khan also allows a 5-second count × 12.",
+     "note": "Thaler ch3 p.126–127; Khan ch2 Table 2-2"
+    }
+   ]
+  },
+  {
+   "id": "m2-rhythm",
+   "name": "Is it sinus?",
+   "desc": "Prove sinus rhythm and judge regularity with four questions.",
+   "cards": [
+    {
+     "id": "m2-rhythm-01",
+     "q": "A regular rhythm from the sinus node at 120 bpm is normal sinus rhythm.\nTrue or false?",
+     "a": "False. It is sinus, but over 100 bpm it is sinus tachycardia, not normal sinus rhythm.",
+     "note": "Thaler ch3 p.119, 128"
+    },
+    {
+     "id": "m2-rhythm-02",
+     "q": "Explain: A P before every QRS",
+     "a": "The first proof of sinus rhythm: one P wave before every QRS, and a QRS after every P. Every atrial beat reaches the ventricles.",
+     "note": "Thaler ch8 p.334–335; Khan ch2 p.35"
+    },
+    {
+     "id": "m2-rhythm-03",
+     "q": "On a sinus strip, the PR interval from beat to beat is",
+     "a": "The same in every beat\n\nA sinus impulse takes the same path through the AV node each time, so the PR is fixed.",
+     "note": "Thaler ch3 p.124; Khan ch2 p.35"
+    },
+    {
+     "id": "m2-rhythm-04",
+     "q": "Name the lead where a sinus P wave is always inverted",
+     "a": "aVR\n\naVR looks at the heart from the right shoulder, opposite the direction of atrial depolarisation.",
+     "note": "Thaler ch3 p.132; Khan ch2 Table 2-1, ch3 p.81"
+    },
+    {
+     "id": "m2-rhythm-05",
+     "q": "Which pair of leads shows P waves best for judging rhythm?",
+     "a": "II and V1\n\nKhan names II and V1 as the best leads to see P waves.",
+     "note": "Thaler ch3 p.122; Khan ch2 p.35, ch3 p.82"
+    },
+    {
+     "id": "m2-rhythm-06",
+     "q": "Explain: Regular means equal RR intervals",
+     "a": "A rhythm is regular when the RR intervals are equal along the strip. In sinus rhythm the PP intervals are also equal, and equal to the RR.",
+     "note": "Khan ch2 p.35"
+    },
+    {
+     "id": "m2-rhythm-07",
+     "q": "Explain: Irregularly irregular: no pattern at all",
+     "a": "When RR intervals vary with no pattern whatsoever, the rhythm is irregularly irregular. The classic cause is atrial fibrillation, covered in level 3.",
+     "note": "Thaler ch3 p.150; Khan ch11 p.281"
+    },
+    {
+     "id": "m2-rhythm-08",
+     "q": "A rhythm whose RR intervals alternate short, long, short, long has no pattern.\nTrue or false?",
+     "a": "False. Alternating intervals repeat predictably; that is a pattern, unlike atrial fibrillation.",
+     "note": "Thaler ch3 p.150; Khan ch11 p.281"
+    },
+    {
+     "id": "m2-rhythm-09",
+     "q": "Put Thaler's four questions in order",
+     "a": "Are normal P waves present? → Is the QRS narrow or wide? → How do P waves relate to QRS complexes? → Is the rhythm regular or irregular?\n\nThaler asks them in this order for every rhythm.",
+     "note": "Thaler ch8 p.329, 334"
+    },
+    {
+     "id": "m2-rhythm-10",
+     "q": "Explain: Normal sinus rhythm answers all four",
+     "a": "For normal sinus rhythm the answers are: P waves present, QRS narrow, one P for every QRS, rhythm regular. Any different answer flags an arrhythmia to work out.",
+     "note": "Thaler ch8 p.334–335"
+    }
+   ]
+  },
+  {
+   "id": "m2-intervals",
+   "name": "Intervals",
+   "desc": "Measure PR, QRS and QT, and correct the QT for rate.",
+   "cards": [
+    {
+     "id": "m2-intervals-01",
+     "q": "Explain: Normal PR is 0.12–0.20 s",
+     "a": "Measure the PR from the start of the P to the start of the QRS. Normal is 0.12–0.20 s, three to five small squares. Khan accepts up to 0.22 s in adults.",
+     "note": "Thaler ch1 p.62; Khan ch2 Table 2-1"
+    },
+    {
+     "id": "m2-intervals-02",
+     "q": "Explain: A long PR exceeds 0.20 s",
+     "a": "A PR over 0.20 s (more than one large square) is long. When every P still conducts, this is first-degree AV block, covered in level 4.",
+     "note": "Thaler ch8 p.338; Khan ch2 p.35"
+    },
+    {
+     "id": "m2-intervals-03",
+     "q": "A PR of 0.10 s is",
+     "a": "Short\n\nAnything under 0.12 s (three small squares) is a short PR.",
+     "note": "Thaler ch8 p.341; Khan ch2 p.43"
+    },
+    {
+     "id": "m2-intervals-04",
+     "q": "Which QRS duration is normal?",
+     "a": "0.08 s\n\nA normal QRS is 0.06–0.10 s; 0.12 s or more is wide.",
+     "note": "Thaler ch1 p.70, ch8 p.334; Khan ch2 Table 2-1"
+    },
+    {
+     "id": "m2-intervals-05",
+     "q": "A QRS of 0.14 s should first make you think of",
+     "a": "A bundle branch block\n\nKhan: QRS 0.12 s or more means bundle branch block is present until proven otherwise.",
+     "note": "Khan ch2 p.35; Thaler ch8 p.339"
+    },
+    {
+     "id": "m2-intervals-06",
+     "q": "Explain: QT runs from QRS onset to T end",
+     "a": "The QT interval runs from the start of the QRS to the end of the T: all of ventricular depolarisation and repolarisation. Measure it in a lead where the T end is clear and there is no U wave.",
+     "note": "Thaler ch1 p.72; Khan ch10 p.228"
+    },
+    {
+     "id": "m2-intervals-07",
+     "q": "At a rate of 75, the RR is 0.80 s. The QT should be less than",
+     "a": "0.40 s\n\nKhan’s rough rule: QT under half the preceding RR interval.",
+     "note": "Thaler ch1 p.72; Khan ch10 p.228"
+    },
+    {
+     "id": "m2-intervals-08",
+     "q": "QT is 0.36 s and RR is 0.64 s (√0.64 = 0.8). What is the QTc?",
+     "a": "450 ms\n\n0.36 ÷ 0.8 = 0.45 s, a QTc of 450 ms.",
+     "note": "Thaler ch7 p.301"
+    },
+    {
+     "id": "m2-intervals-09",
+     "q": "Explain: Upper limits of the QT",
+     "a": "Khan’s table, no formula needed: at 66–100 bpm the QT should be under 0.41 s in men, 0.43 s in women (under 0.47/0.48 s at 45–65 bpm). Thaler: on QT-prolonging drugs the QTc must not exceed 500 ms.",
+     "note": "Khan ch2 Table 2-5; Thaler ch7 p.301"
+    },
+    {
+     "id": "m2-intervals-10",
+     "q": "A prolonged QT can predispose to a life-threatening ventricular arrhythmia.\nTrue or false?",
+     "a": "True. Delayed repolarisation is the substrate for torsades de pointes.",
+     "note": "Khan ch10 p.228; Thaler ch3 p.121"
+    }
+   ]
+  },
+  {
+   "id": "m2-axis",
+   "name": "Axis",
+   "desc": "Find the QRS axis with leads I and aVF, then refine it.",
+   "cards": [
+    {
+     "id": "m2-axis-01",
+     "q": "The QRS axis is measured using",
+     "a": "The six limb leads\n\nAxis is defined in the frontal plane, which only the limb leads record.",
+     "note": "Thaler ch2 p.85–86"
+    },
+    {
+     "id": "m2-axis-02",
+     "q": "Lead aVF is positive when the axis lies between",
+     "a": "0° and 180°\n\naVF sits at +90°, so any axis within 90° of it, 0° to 180°, is positive.",
+     "note": "Thaler ch2 p.87–88"
+    },
+    {
+     "id": "m2-axis-03",
+     "q": "Explain: I and aVF both positive: normal",
+     "a": "The quadrant method: if the QRS is mainly positive in both I and aVF, the axis lies between 0° and +90° and is normal.",
+     "note": "Thaler ch2 p.88; Khan ch2 Step 9"
+    },
+    {
+     "id": "m2-axis-04",
+     "q": "By Khan’s table, what is the normal axis range for a 55-year-old?",
+     "a": "−30° to +90°\n\nKhan gives −30° to +90° for adults over 40.",
+     "note": "Thaler ch2 p.86, 90; Khan ch2 Table 2-1, ch9 p.213"
+    },
+    {
+     "id": "m2-axis-05",
+     "q": "Explain: I positive, aVF negative: left",
+     "a": "QRS positive in I, negative in aVF puts the axis between 0° and −90°: left axis deviation. Khan reserves the term for −30° to −90°.",
+     "note": "Thaler ch2 p.92; Khan ch9 p.213"
+    },
+    {
+     "id": "m2-axis-06",
+     "q": "I positive, aVF negative, II positive. By the −30° rule the axis is",
+     "a": "Normal\n\nA positive lead II keeps the axis within −30°, inside the extended normal range.",
+     "note": "Thaler ch2 p.90; Khan ch9 Table 9-1"
+    },
+    {
+     "id": "m2-axis-07",
+     "q": "Explain: I negative, aVF positive: right",
+     "a": "QRS negative in I, positive in aVF puts the axis between +90° and 180°: right axis deviation. Khan sets the adult threshold higher, at +100° to +110°.",
+     "note": "Thaler ch2 p.91; Khan ch2 Step 9, ch9 p.214"
+    },
+    {
+     "id": "m2-axis-08",
+     "q": "Explain: Both negative: extreme axis",
+     "a": "QRS negative in both I and aVF puts the axis between −90° and 180°. Thaler calls this extreme right axis deviation; it is rare.",
+     "note": "Thaler ch2 p.93"
+    },
+    {
+     "id": "m2-axis-09",
+     "q": "aVL (−30°) is the most equiphasic lead, and I and aVF are positive. The axis is",
+     "a": "+60°\n\nPerpendicular to aVL is +60° or −120°; a normal quadrant makes it +60°.",
+     "note": "Thaler ch2 p.90; Khan ch2 Table 2-4"
+    },
+    {
+     "id": "m2-axis-10",
+     "q": "Match each cause with the axis it tends to produce",
+     "a": "Left anterior fascicular block: Left axis deviation\nRight ventricular hypertrophy: Right axis deviation\nPulmonary embolism: Right axis deviation\nLeft ventricular hypertrophy: Left axis deviation\n\nKhan lists LAFB and LVH under left axis, RVH and PE under right axis.",
+     "note": "Khan ch9 p.214–215"
+    }
+   ]
+  },
+  {
+   "id": "m2-steps",
+   "name": "The step-by-step read",
+   "desc": "Read every ECG in the same order and write the report.",
+   "cards": [
+    {
+     "id": "m2-steps-01",
+     "q": "Experienced readers can skip the system and go straight to the obvious abnormality.\nTrue or false?",
+     "a": "False. Both books insist on a fixed, methodical order so that nothing important is missed.",
+     "note": "Thaler ch8 p.327–328; Khan ch2 p.35"
+    },
+    {
+     "id": "m2-steps-02",
+     "q": "The standard calibration mark should be",
+     "a": "10 mm for 1 mV\n\nBoth books: 1 mV is displayed as a 10-mm deflection.",
+     "note": "Thaler ch8 p.328; Khan ch2 p.77"
+    },
+    {
+     "id": "m2-steps-03",
+     "q": "Why does Khan assess rhythm before rate?",
+     "a": "Rhythm is clinically more important\n\nKhan: rhythm is more important clinically, and a normal rate is easily spotted.",
+     "note": "Khan ch2 p.32, 35"
+    },
+    {
+     "id": "m2-steps-04",
+     "q": "Why does Khan look for bundle branch block and WPW before the ST segment?",
+     "a": "They can mimic or mask infarction\n\nLBBB obscures ischaemia and hypertrophy; RBBB and WPW can imitate infarction.",
+     "note": "Khan ch2 p.32–33, 43"
+    },
+    {
+     "id": "m2-steps-05",
+     "q": "Khan checks the ST segment at step 4, ahead of the T waves and axis, because",
+     "a": "Acute infarction depends on it\n\nEarly diagnosis of acute MI hinges on careful assessment of the ST segment.",
+     "note": "Khan ch2 p.33, 51"
+    },
+    {
+     "id": "m2-steps-06",
+     "q": "Put Khan's steps in order",
+     "a": "Rhythm and rate → Intervals and blocks → ST segment → Q waves → T waves → Axis → Arrhythmia\n\nKhan: 1 rhythm/rate, 2 blocks, 4 ST, 5 Q, 8 T, 9 axis, 11 arrhythmia.",
+     "note": "Khan ch2 p.33–34"
+    },
+    {
+     "id": "m2-steps-07",
+     "q": "In Khan’s method, the axis on its own establishes a specific diagnosis.\nTrue or false?",
+     "a": "False. Khan calls the axis ancillary: it supports a diagnosis but makes none alone.",
+     "note": "Khan ch2 p.34"
+    },
+    {
+     "id": "m2-steps-08",
+     "q": "Put Thaler's nine steps in order",
+     "a": "Rate → Intervals → Axis → Rhythm → Conduction blocks → Pre-excitation → Enlargement and hypertrophy → Coronary artery disease → Other conditions\n\nThaler measures first (rate, intervals, axis), then works through rhythm and each disease group.",
+     "note": "Thaler ch8 p.328–329"
+    },
+    {
+     "id": "m2-steps-09",
+     "q": "\"Sinus rhythm 72/min, PR 0.16 s, QRS 0.08 s, QT 0.38 s, normal ST and T, normal ECG.\" What is missing?",
+     "a": "The axis\n\nRate, rhythm, intervals and ST/T are there; no axis is stated.",
+     "note": "Khan ch2 Fig. 2-2F"
+    },
+    {
+     "id": "m2-steps-10",
+     "q": "Which is one of Khan’s four closing statements?",
+     "a": "Borderline ECG\n\nKhan’s four: normal, within normal limits, borderline, abnormal.",
+     "note": "Khan ch2 p.35"
+    }
+   ]
+  },
+  {
+   "id": "m2-variants",
+   "name": "Normal variants",
+   "desc": "Recognise findings that look abnormal but are normal.",
+   "cards": [
+    {
+     "id": "m2-variants-01",
+     "q": "Explain: Sinus arrhythmia follows breathing",
+     "a": "Sinus arrhythmia is sinus rhythm that is slightly irregular: the rate rises on inspiration and falls on expiration. It is a normal finding.",
+     "note": "Thaler ch3 p.129–130"
+    },
+    {
+     "id": "m2-variants-02",
+     "q": "Loss of sinus arrhythmia is classically seen in",
+     "a": "Diabetic autonomic neuropathy\n\nDiabetes can damage the autonomic nerves that vary the sinus rate with breathing.",
+     "note": "Thaler ch3 p.130"
+    },
+    {
+     "id": "m2-variants-03",
+     "q": "A resting rate of 42 bpm in a fit marathon runner can be normal.\nTrue or false?",
+     "a": "True. Thaler: rates of 35–40 bpm are common and normal in well-trained athletes.",
+     "note": "Thaler ch3 p.119, ch8 p.348"
+    },
+    {
+     "id": "m2-variants-04",
+     "q": "Which feature fits benign early repolarisation?",
+     "a": "A notched J point\n\nA notched or slurred J point with concave ST and no reciprocal change is typical.",
+     "note": "Thaler ch6 p.249–250; Khan ch2 p.52, ch5 p.123"
+    },
+    {
+     "id": "m2-variants-05",
+     "q": "T inversion in V1–V3 in a healthy 19-year-old can be a normal variant.\nTrue or false?",
+     "a": "True. Inverted T waves in V1–V3 are normal in children and young adults.",
+     "note": "Thaler ch6 p.246; Khan ch8 p.193, 202"
+    },
+    {
+     "id": "m2-variants-06",
+     "q": "Name the lead where an inverted T wave is always normal",
+     "a": "aVR\n\naVR faces the heart from the right shoulder, so its T is normally inverted.",
+     "note": "Thaler ch6 p.246; Khan ch8 p.193, 202"
+    },
+    {
+     "id": "m2-variants-07",
+     "q": "A narrow Q in lead III alone, with none in II or aVF, means an inferior infarction.\nTrue or false?",
+     "a": "False. Khan: an isolated narrow Q in III without Q waves in II and aVF is a normal variant.",
+     "note": "Khan ch1 p.16, ch2 p.61–62, ch6 p.139"
+    },
+    {
+     "id": "m2-variants-08",
+     "q": "A healthy 25-year-old has an rSr' in V1, QRS 0.07 s, no slurred S in I or V6. This is",
+     "a": "A normal variant\n\nA narrow QRS rSr' without a slurred lateral S is a normal variant in over 5% of people.",
+     "note": "Khan ch1 p.22, ch4 p.96"
+    },
+    {
+     "id": "m2-variants-09",
+     "q": "According to Thaler, the most frequent cause of poor R wave progression is perhaps",
+     "a": "Improper chest lead placement\n\nThaler: perhaps most often, improper placement of the leads on the chest wall.",
+     "note": "Thaler ch6 p.263; Khan ch2 p.60–61"
+    }
+   ]
+  }
+ ]
+}

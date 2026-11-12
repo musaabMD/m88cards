@@ -1,0 +1,404 @@
+{
+ "id": "ecg-1",
+ "name": "ECG 1 · Foundations",
+ "blurb": "Name every wave, line and lead on a normal ECG.",
+ "color": "#2563EB",
+ "topics": [
+  {
+   "id": "m1-what",
+   "name": "What an ECG is",
+   "desc": "Electricity, deflections and the grid every tracing is drawn on.",
+   "cards": [
+    {
+     "id": "m1-what-01",
+     "q": "The ECG records the heart’s electrical activity, not its squeezing.\nTrue or false?",
+     "a": "True. The ECG is a recording of electrical events; contraction follows them but is not what the machine measures.",
+     "note": "Thaler ch1 p.19; Khan ch1 p.1"
+    },
+    {
+     "id": "m1-what-02",
+     "q": "In a resting heart muscle cell, the inside is",
+     "a": "Negative compared with the outside\n\nResting cells are polarised, inside negative, maintained by membrane pumps.",
+     "note": "Thaler ch1 p.19; Khan ch1 p.4"
+    },
+    {
+     "id": "m1-what-03",
+     "q": "Depolarisation of a heart muscle cell is followed by",
+     "a": "Contraction of the cell\n\nDepolarisation releases calcium inside the cell, letting actin and myosin contract it.",
+     "note": "Thaler ch1 p.20, p.26; Khan ch1 p.2"
+    },
+    {
+     "id": "m1-what-04",
+     "q": "Every ECG wave comes from either depolarisation or repolarisation.\nTrue or false?",
+     "a": "True. These are the only two electrical processes; all the waves are manifestations of them.",
+     "note": "Thaler ch1 p.20; Khan ch1 p.4"
+    },
+    {
+     "id": "m1-what-05",
+     "q": "A wave of depolarisation moves away from the positive electrode. The deflection is",
+     "a": "Downward\n\nDepolarisation moving away from a positive electrode records a negative deflection.",
+     "note": "Thaler ch1 p.43; Khan ch1 p.3–4"
+    },
+    {
+     "id": "m1-what-06",
+     "q": "A wave of depolarisation passes at right angles to an electrode. It records",
+     "a": "An up-then-down biphasic wave\n\nThe wave first approaches (positive), then recedes (negative): biphasic.",
+     "note": "Thaler ch1 p.44–46"
+    },
+    {
+     "id": "m1-what-07",
+     "q": "On ECG paper, the height of a wave measures its",
+     "a": "Voltage\n\nThe vertical axis measures voltage; the horizontal axis measures time.",
+     "note": "Thaler ch1 p.27"
+    },
+    {
+     "id": "m1-what-08",
+     "q": "One small square across the paper equals",
+     "a": "0.04 s\n\nEach 1 mm small square is 0.04 s on the time axis.",
+     "note": "Thaler ch1 p.27; Khan ch2 Table 2-2"
+    },
+    {
+     "id": "m1-what-09",
+     "q": "How many large squares make one second?",
+     "a": "5 squares\n\nEach large square is 0.2 s, so 5 × 0.2 s = 1 s.",
+     "note": "Thaler ch1 p.27–28, ch3 p.125"
+    },
+    {
+     "id": "m1-what-10",
+     "q": "At standard gain, how many millimetres tall is the 1 mV calibration box?",
+     "a": "10 mm\n\nStandardisation is 1 mV displayed as a 10 mm deflection.",
+     "note": "Khan ch2 p.77 (ECG technique), Table 2-1"
+    }
+   ]
+  },
+  {
+   "id": "m1-waves",
+   "name": "The waves",
+   "desc": "P, QRS, T and U, the flat lines between them, and their names.",
+   "cards": [
+    {
+     "id": "m1-waves-01",
+     "q": "Explain: P wave: the atria depolarising",
+     "a": "The first small, rounded wave of each beat is the P wave. It records depolarisation spreading through both atria.",
+     "note": "Thaler ch1 p.29; Khan ch1 p.8–9"
+    },
+    {
+     "id": "m1-waves-02",
+     "q": "Explain: QRS: the ventricles depolarising",
+     "a": "The tall, spiky QRS complex records depolarisation of the ventricles. It is much bigger than the P wave because the ventricles have far more muscle than the atria.",
+     "note": "Thaler ch1 p.33; Khan ch1 p.9"
+    },
+    {
+     "id": "m1-waves-03",
+     "q": "Explain: T wave: the ventricles repolarising",
+     "a": "The broad, rounded T wave records ventricular repolarisation. Repolarisation is slower than depolarisation, so the T wave is wider and smoother than the QRS.",
+     "note": "Thaler ch1 p.37–38; Khan ch1 p.11"
+    },
+    {
+     "id": "m1-waves-04",
+     "q": "Why is there no visible wave for atrial repolarisation?",
+     "a": "It is buried in the QRS complex\n\nAtrial repolarisation coincides with ventricular depolarisation and is hidden by the much larger QRS.",
+     "note": "Thaler ch1 p.37–38"
+    },
+    {
+     "id": "m1-waves-05",
+     "q": "A QRS starts upward, then dips below the baseline. The downward part is",
+     "a": "An S wave\n\nA downward deflection is a Q only if it comes first; after an R it is an S.",
+     "note": "Thaler ch1 p.35; Khan ch1 Fig. 1-9"
+    },
+    {
+     "id": "m1-waves-06",
+     "q": "A QRS has a tiny downward dip, then a tall upward wave, nothing else. It is a",
+     "a": "qR\n\nSmall first downward wave = q; large upward wave = R.",
+     "note": "Khan ch1 p.10, Fig. 1-9; Thaler ch1 p.35"
+    },
+    {
+     "id": "m1-waves-07",
+     "q": "Explain: The U wave sometimes follows T",
+     "a": "In some people a small, often indistinct U wave follows the T wave. Its source is uncertain.",
+     "note": "Khan ch1 p.11"
+    },
+    {
+     "id": "m1-waves-08",
+     "q": "Explain: Segments are flat lines",
+     "a": "A segment is the straight line between two waves. The PR segment runs from the end of P to the QRS. The ST segment runs from the end of QRS to the T. The TP segment is the baseline between beats.",
+     "note": "Thaler ch1 p.40–41; Khan ch1 p.10"
+    },
+    {
+     "id": "m1-waves-09",
+     "q": "Explain: The J point ends the QRS",
+     "a": "The point where the ST segment takes off from the end of the QRS is the J point (junction point).",
+     "note": "Khan ch1 p.10"
+    },
+    {
+     "id": "m1-waves-10",
+     "q": "Explain: Intervals include at least one wave",
+     "a": "An interval spans at least one wave. - PR interval: start of P to start of QRS - QRS duration: the QRS alone - QT interval: start of QRS to end of T",
+     "note": "Thaler ch1 p.40–42"
+    }
+   ]
+  },
+  {
+   "id": "m1-wiring",
+   "name": "The conduction system",
+   "desc": "SA node to Purkinje fibres, and which wave each step makes.",
+   "cards": [
+    {
+     "id": "m1-wiring-01",
+     "q": "Where is the SA node?",
+     "a": "High in the right atrium\n\nThe dominant pacemaker cells sit high up in the right atrium.",
+     "note": "Thaler ch1 p.23–24; Khan ch1 p.6"
+    },
+    {
+     "id": "m1-wiring-02",
+     "q": "The SA node firing makes a small wave just before the P wave.\nTrue or false?",
+     "a": "False. Pacemaker activity generates too little voltage to be seen on the surface ECG.",
+     "note": "Thaler ch1 p.27, p.41"
+    },
+    {
+     "id": "m1-wiring-03",
+     "q": "The first part of the P wave mainly reflects",
+     "a": "Right atrial depolarisation\n\nThe SA node is in the right atrium, so the right atrium depolarises first.",
+     "note": "Thaler ch1 p.29; Khan ch1 p.8–9"
+    },
+    {
+     "id": "m1-wiring-04",
+     "q": "Why does the AV node delay the impulse?",
+     "a": "To let the atria finish emptying into the ventricles\n\nThe pause lets atrial contraction fill the ventricles before ventricular contraction.",
+     "note": "Thaler ch1 p.30–31; Khan ch1 p.6"
+    },
+    {
+     "id": "m1-wiring-05",
+     "q": "Put the conduction path in order.",
+     "a": "SA node → Atria → AV node → Bundle of His → Bundle branches → Purkinje fibres\n\nThe impulse runs SA node → atria → AV node → His → bundle branches → Purkinje fibres.",
+     "note": "Thaler ch1 p.31–32; Khan ch1 p.6"
+    },
+    {
+     "id": "m1-wiring-06",
+     "q": "Ordinary ventricular muscle conducts the impulse faster than the Purkinje fibres.\nTrue or false?",
+     "a": "False. Myocardial cells conduct far less efficiently; the specialised conducting cells are the fast highway.",
+     "note": "Thaler ch1 p.25–26, p.31"
+    },
+    {
+     "id": "m1-wiring-07",
+     "q": "The septum depolarises in which direction?",
+     "a": "Left to right\n\nThe septal fascicle of the left bundle activates the septum from left to right.",
+     "note": "Thaler ch1 p.32, p.36; Khan ch1 p.21"
+    },
+    {
+     "id": "m1-wiring-08",
+     "q": "Most of the normal QRS reflects",
+     "a": "Left ventricular activation\n\nThe left ventricle is about three times heavier, so its forces dominate.",
+     "note": "Thaler ch1 p.36; Khan ch1 p.21–22"
+    },
+    {
+     "id": "m1-wiring-09",
+     "q": "In a lead with a tall R wave, the normal T wave is",
+     "a": "Upright\n\nRepolarisation runs opposite to depolarisation, so it also records positive in leads with tall R waves.",
+     "note": "Thaler ch1 p.46, p.72; Khan ch1 p.11"
+    },
+    {
+     "id": "m1-wiring-10",
+     "q": "Match each pacemaker to its usual rate.",
+     "a": "SA node: 60–100/min\nAV junction: 40–60/min\nVentricle: 30–45/min\n\nThe further down the conduction system, the slower the intrinsic rate.",
+     "note": "Thaler ch1 p.24, ch3 p.131"
+    }
+   ]
+  },
+  {
+   "id": "m1-leads",
+   "name": "The 12 views",
+   "desc": "Ten electrodes, twelve leads, two planes, and the mean vector.",
+   "cards": [
+    {
+     "id": "m1-leads-01",
+     "q": "How many electrodes does a standard 12-lead ECG use?",
+     "a": "10\n\nFour limb electrodes plus six chest electrodes make 10, which produce 12 leads.",
+     "note": "Thaler ch1 p.49–50; Khan ch1 p.12, p.15"
+    },
+    {
+     "id": "m1-leads-02",
+     "q": "Match each lead to its angle.",
+     "a": "Lead I: 0°\nLead II: +60°\nLead III: +120°\n\nEach angle runs from the negative to the positive electrode on the frontal circle.",
+     "note": "Thaler ch1 p.53; Khan ch1 p.12–15"
+    },
+    {
+     "id": "m1-leads-03",
+     "q": "Lead aVF is positive at the legs. Its angle is",
+     "a": "+90°\n\naVF looks straight up from the feet: +90°.",
+     "note": "Thaler ch1 p.53–54; Khan ch1 p.14–15"
+    },
+    {
+     "id": "m1-leads-04",
+     "q": "Order the limb leads by angle, from −150° to +120°.",
+     "a": "aVR → aVL → I → II → aVF → III\n\naVR −150°, aVL −30°, I 0°, II +60°, aVF +90°, III +120°.",
+     "note": "Thaler ch1 p.51–56; Khan ch1 p.16"
+    },
+    {
+     "id": "m1-leads-05",
+     "q": "Name the three inferior leads.",
+     "a": "II, III, aVF\n\nII, III and aVF view the inferior surface of the heart.",
+     "note": "Thaler ch1 p.55; Khan ch1 p.15"
+    },
+    {
+     "id": "m1-leads-06",
+     "q": "Match each electrode to its position.",
+     "a": "V1: 4th space, right sternal edge\nV2: 4th space, left sternal edge\nV4: 5th space, midclavicular line\nV6: Midaxillary line, level with V4\n\nThese four landmarks fix the chest leads; V3 and V5 sit between them.",
+     "note": "Thaler ch1 p.57; Khan ch2 Fig. 2-38"
+    },
+    {
+     "id": "m1-leads-07",
+     "q": "Name the anterior leads.",
+     "a": "V2, V3, V4\n\nThaler groups V2, V3 and V4 as the anterior leads.",
+     "note": "Thaler ch1 p.56–58; Khan ch1 p.16"
+    },
+    {
+     "id": "m1-leads-08",
+     "q": "The length of the mean vector represents the",
+     "a": "Voltage of the wave\n\nA vector has direction (where current flows) and length (its amplitude).",
+     "note": "Thaler ch1 p.59–61; Khan ch1 p.6, p.20"
+    },
+    {
+     "id": "m1-leads-09",
+     "q": "The QRS vector points to +60°. Which limb lead shows the tallest R?",
+     "a": "II\n\nLead II sits at +60°, directly facing the vector.",
+     "note": "Thaler ch1 p.48, p.68; Khan ch1 p.20"
+    },
+    {
+     "id": "m1-leads-10",
+     "q": "Name the lead where P, QRS and T are all normally negative.",
+     "a": "aVR\n\naVR points away from the normal current, so every wave is inverted.",
+     "note": "Thaler ch1 p.62, p.68; Khan ch1 p.14, p.24"
+    }
+   ]
+  },
+  {
+   "id": "m1-normal",
+   "name": "The normal ECG",
+   "desc": "What each wave looks like in each lead, and normal values.",
+   "cards": [
+    {
+     "id": "m1-normal-01",
+     "q": "In which lead is the normal P wave inverted?",
+     "a": "aVR\n\naVR faces away from the atrial current, so its P wave is negative.",
+     "note": "Thaler ch1 p.62–64; Khan Table 2-1, ch3 p.81"
+    },
+    {
+     "id": "m1-normal-02",
+     "q": "Explain: Normal PR: 0.12–0.20 s",
+     "a": "The normal PR interval is 0.12–0.20 s: 3 to 5 small squares. Khan allows up to 0.22 s in adults.",
+     "note": "Thaler ch1 p.65; Khan Table 2-1"
+    },
+    {
+     "id": "m1-normal-03",
+     "q": "A q wave in V6 is 0.02 s wide and 1 mm deep. Is it normal?",
+     "a": "Yes: under 0.04 s and under 3 mm, a normal septal q\n\nA septal q is normal when under 0.04 s wide and under 3 mm deep. V1 normally has no q at all.",
+     "note": "Thaler ch1 p.67; Khan ch1 p.21, p.24"
+    },
+    {
+     "id": "m1-normal-04",
+     "q": "Which QRS duration is normal?",
+     "a": "0.08 s\n\nNormal QRS is 0.06–0.10 s; 0.12 s or more is wide.",
+     "note": "Thaler ch1 p.70, ch3 p.138; Khan Table 2-1"
+    },
+    {
+     "id": "m1-normal-05",
+     "q": "In a normal ECG, V1 usually shows",
+     "a": "A small r and deep S\n\nVentricular current flows leftward, away from V1, giving a dominant S.",
+     "note": "Thaler ch1 p.69; Khan ch1 p.21–23"
+    },
+    {
+     "id": "m1-normal-06",
+     "q": "The normal precordial transition zone is at",
+     "a": "V3–V4\n\nR and S are about equal in V3 or V4 in the normal heart.",
+     "note": "Thaler ch1 p.69; Khan Fig. 2-2"
+    },
+    {
+     "id": "m1-normal-07",
+     "q": "An inverted T wave in V1 can be normal.\nTrue or false?",
+     "a": "True. Khan lists the T wave in V1 as variable in normal people.",
+     "note": "Thaler ch1 p.72; Khan Table 2-1"
+    },
+    {
+     "id": "m1-normal-08",
+     "q": "Explain: QT under half the RR",
+     "a": "The QT interval shortens as the heart speeds up. A rough rule: at rates of 60–100, the QT is under half the preceding RR interval. Correcting for rate gives the QTc (QT ÷ √RR).",
+     "note": "Thaler ch1 p.72–73, ch7 p.301; Khan ch10 p.227"
+    },
+    {
+     "id": "m1-normal-09",
+     "q": "Which QRS axis is normal by Thaler’s simple definition?",
+     "a": "+45°\n\nThaler’s normal range is 0° to +90°; +45° lies inside it.",
+     "note": "Thaler ch1 p.68, ch2 p.89–90; Khan Table 2-1"
+    },
+    {
+     "id": "m1-normal-10",
+     "q": "Explain: Rate from the big squares",
+     "a": "Count large squares between two R waves. 1, 2, 3, 4, 5, 6 large squares mean 300, 150, 100, 75, 60, 50 beats a minute. A normal rate is 60–100.",
+     "note": "Khan Table 2-2; Thaler ch3 p.125"
+    }
+   ]
+  },
+  {
+   "id": "m1-tech",
+   "name": "A good tracing",
+   "desc": "Layout, calibration, wrong electrodes, artefacts and the computer read.",
+   "cards": [
+    {
+     "id": "m1-tech-01",
+     "q": "Why is lead II the usual rhythm strip?",
+     "a": "P waves are seen best in it\n\nKhan: P waves are best seen in II and V1, so these are used for rhythm strips.",
+     "note": "Khan ch3 p.82"
+    },
+    {
+     "id": "m1-tech-02",
+     "q": "If the calibration box is only 5 mm tall, the waves look half their true voltage.\nTrue or false?",
+     "a": "True. At half standard, 1 mV is drawn as 5 mm, so every amplitude is halved.",
+     "note": "Khan ch2 p.77, Fig. 2-25"
+    },
+    {
+     "id": "m1-tech-03",
+     "q": "Why should the patient lie flat?",
+     "a": "Posture changes the heart’s position and the waves\n\nChanges in posture move the heart and alter voltage, ST segments and Q waves.",
+     "note": "Thaler ch1 p.59"
+    },
+    {
+     "id": "m1-tech-04",
+     "q": "Lead I shows inverted P, QRS and T; chest leads look normal. Most likely cause?",
+     "a": "Swapped arm electrodes\n\nReversing the arm electrodes turns lead I into its mirror image; the chest leads are unaffected.",
+     "note": "Thaler ch1 p.58; Khan ch2 p.80, Table 2-1"
+    },
+    {
+     "id": "m1-tech-05",
+     "q": "Moving a chest electrode slightly to avoid hair is harmless.\nTrue or false?",
+     "a": "False. Even slight misplacement can change R waves and mimic a previous infarct.",
+     "note": "Thaler ch1 p.59; Khan ch1 p.18–20, ch2 p.80"
+    },
+    {
+     "id": "m1-tech-06",
+     "q": "A shivering patient’s tracing has a jittery baseline. This is",
+     "a": "Muscle tremor artefact\n\nSkeletal muscle activity from shivering is recorded as tremor artefact.",
+     "note": "Thaler ch7 p.296"
+    },
+    {
+     "id": "m1-tech-07",
+     "q": "The commonest cause of a drifting baseline is",
+     "a": "A loose electrode\n\nKhan: artefacts like baseline drift are often caused by loose or poorly applied sensors.",
+     "note": "Khan ch2 p.77"
+    },
+    {
+     "id": "m1-tech-08",
+     "q": "Which electrode is the earth that reduces interference?",
+     "a": "Right leg\n\nKhan: the right leg electrode is an earth and minimises interference.",
+     "note": "Khan ch1 p.15"
+    },
+    {
+     "id": "m1-tech-09",
+     "q": "A computer report of \"normal ECG\" can be accepted without looking at the tracing.\nTrue or false?",
+     "a": "False. The computer often misses subtle abnormalities and has no clinical context.",
+     "note": "Thaler ch1 p.76"
+    }
+   ]
+  }
+ ]
+}

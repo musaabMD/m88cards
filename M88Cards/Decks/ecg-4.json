@@ -1,0 +1,471 @@
+{
+ "id": "ecg-4",
+ "name": "ECG 4 · Conduction and chambers",
+ "blurb": "Grade heart blocks, read bundle blocks, WPW, hypertrophy and pacing.",
+ "color": "#DC2626",
+ "topics": [
+  {
+   "id": "m4-avb",
+   "name": "AV blocks",
+   "desc": "Read the P-to-QRS relationship and grade the block.",
+   "cards": [
+    {
+     "id": "m4-avb-01",
+     "q": "AV blocks are graded by looking at",
+     "a": "How each P wave relates to the QRS\n\nAn AV block is a problem getting the atrial impulse to the ventricles, so the P–QRS link is what you read.",
+     "note": "Thaler ch4 p.182–184; Khan ch11 p.258"
+    },
+    {
+     "id": "m4-avb-02",
+     "q": "Explain: First degree: PR over 0.20 s",
+     "a": "In first-degree AV block the PR interval is longer than 0.20 s and constant, but every P wave is still followed by a QRS. It is a delay rather than a block, and by itself needs no treatment.",
+     "note": "Thaler ch4 p.184–185; Khan ch11 p.258"
+    },
+    {
+     "id": "m4-avb-03",
+     "q": "Explain: Mobitz I: the PR stretches, then drops",
+     "a": "In Mobitz I (Wenckebach) the PR lengthens beat by beat until one P wave is not conducted and a QRS is dropped. The PR after the drop is short again, and the cycle repeats.",
+     "note": "Thaler ch4 p.186; Khan ch11 p.259"
+    },
+    {
+     "id": "m4-avb-04",
+     "q": "In Wenckebach, the RR interval that contains the dropped P wave is",
+     "a": "Shorter than two PP intervals\n\nKhan: the RR containing the blocked P is shorter than the sum of two PP intervals.",
+     "note": "Khan ch11 p.259"
+    },
+    {
+     "id": "m4-avb-05",
+     "q": "Where does Mobitz I block almost always sit?",
+     "a": "In the AV node\n\nWenckebach is a progressive nodal delay, which is why it is usually benign.",
+     "note": "Thaler ch4 p.186–189"
+    },
+    {
+     "id": "m4-avb-06",
+     "q": "Explain: Mobitz II: fixed PR, sudden drop",
+     "a": "In Mobitz II the PR stays constant: at least two beats conduct with the same PR, then a P wave suddenly fails to conduct. There is no warning lengthening.",
+     "note": "Thaler ch4 p.186–187; Khan ch11 p.259–261"
+    },
+    {
+     "id": "m4-avb-07",
+     "q": "Mobitz II can progress suddenly to complete heart block.\nTrue or false?",
+     "a": "True. Its block sits below the node and can fail without warning, which is why it needs a pacemaker.",
+     "note": "Thaler ch4 p.186–189; Khan ch11 p.261"
+    },
+    {
+     "id": "m4-avb-08",
+     "q": "Explain: 2:1 block cannot be typed",
+     "a": "When every second P wave is dropped, there is only one PR before each drop, so you cannot see whether it lengthens. Call it simply 2:1 AV block, not Mobitz I or II.",
+     "note": "Thaler ch4 p.188"
+    },
+    {
+     "id": "m4-avb-09",
+     "q": "Explain: Third degree: atria and ventricles part",
+     "a": "In third-degree (complete) block no atrial impulse reaches the ventricles. P waves march at their own rate and QRS complexes at a slower escape rate, with no link between them: AV dissociation.",
+     "note": "Thaler ch4 p.190–191; Khan ch11 p.261–262"
+    },
+    {
+     "id": "m4-avb-10",
+     "q": "Complete heart block with a wide QRS at 35/min. The escape focus is",
+     "a": "The ventricles\n\nA slow, wide escape arises below the bundle branches, in the ventricle itself.",
+     "note": "Thaler ch4 p.190–192; Khan ch11 p.261–262"
+    }
+   ]
+  },
+  {
+   "id": "m4-bbb",
+   "name": "Bundle branch block",
+   "desc": "Spot RBBB and LBBB from the QRS width and V1.",
+   "cards": [
+    {
+     "id": "m4-bbb-01",
+     "q": "Complete bundle branch block widens the QRS to at least",
+     "a": "0.12 s\n\nBoth books require a QRS of 0.12 s or more for complete bundle branch block.",
+     "note": "Thaler ch4 p.196–198; Khan ch4 p.87"
+    },
+    {
+     "id": "m4-bbb-02",
+     "q": "Name the leads with the rSR′",
+     "a": "V1, V2\n\nV1 and V2 sit over the right ventricle, which fires last and writes the R′.",
+     "note": "Thaler ch4 p.197; Khan ch4 p.87–88"
+    },
+    {
+     "id": "m4-bbb-03",
+     "q": "In RBBB, a wide slurred S wave appears in",
+     "a": "I, V5 and V6\n\nThe late rightward forces move away from the left lateral leads and write a broad S there.",
+     "note": "Thaler ch4 p.197; Khan ch4 p.87–90"
+    },
+    {
+     "id": "m4-bbb-04",
+     "q": "Name the leads with a broad, notched R wave",
+     "a": "I, aVL, V5, V6\n\nThe leads over the left ventricle record its slow, late depolarisation as a broad notched R.",
+     "note": "Thaler ch4 p.198; Khan ch4 p.99–100"
+    },
+    {
+     "id": "m4-bbb-05",
+     "q": "Explain: Tell RBBB from LBBB in V1",
+     "a": "Both are wide, so look at V1. Mostly upward with rSR′ means RBBB. Mostly downward, a deep QS or rS, means LBBB.",
+     "note": "Thaler ch4 p.197–198; Khan ch4 p.87, 99"
+    },
+    {
+     "id": "m4-bbb-06",
+     "q": "In LBBB, the T wave in V6 is usually",
+     "a": "Inverted, opposite the R wave\n\nIn bundle branch block the ST-T points away from the main QRS deflection.",
+     "note": "Thaler ch4 p.199; Khan ch4 p.100"
+    },
+    {
+     "id": "m4-bbb-07",
+     "q": "rSR′ in V1 with a QRS of 0.11 s is",
+     "a": "Incomplete RBBB\n\nThe RBBB shape with a QRS between 0.10 and 0.12 s is incomplete RBBB.",
+     "note": "Thaler ch4 p.210; Khan ch4 p.93, 99"
+    },
+    {
+     "id": "m4-bbb-08",
+     "q": "Deep S waves in V1 with LBBB can be used to diagnose LVH.\nTrue or false?",
+     "a": "False. LBBB deranges the vectors, so LVH voltage criteria do not apply.",
+     "note": "Thaler ch4 p.202; Khan ch4 p.100–105"
+    },
+    {
+     "id": "m4-bbb-09",
+     "q": "Which bundle branch block makes the ECG diagnosis of infarction most difficult?",
+     "a": "LBBB\n\nLBBB distorts the QRS, ST and T of the left ventricle, where most infarcts occur.",
+     "note": "Thaler ch6 p.276; Khan ch4 p.100–105"
+    },
+    {
+     "id": "m4-bbb-10",
+     "q": "A 64-year-old with chest pain has an LBBB not seen on last year’s ECG. Treat it as urgently as a STEMI.\nTrue or false?",
+     "a": "True. Thaler: a new LBBB may signify infarction and needs the same urgent attention as a STEMI.",
+     "note": "Thaler ch4 p.200, ch6 p.276; Khan ch4 p.106"
+    }
+   ]
+  },
+  {
+   "id": "m4-hemi",
+   "name": "Hemiblocks",
+   "desc": "Read fascicular blocks from the axis, alone or with RBBB.",
+   "cards": [
+    {
+     "id": "m4-hemi-01",
+     "q": "A hemiblock is a block of",
+     "a": "One fascicle of the left bundle\n\nOnly the left bundle has fascicles, so hemiblocks are left-sided.",
+     "note": "Thaler ch4 p.202–203; Khan ch9 p.216"
+    },
+    {
+     "id": "m4-hemi-02",
+     "q": "In LAFB, the QRS in II, III and aVF is mainly",
+     "a": "Negative (rS)\n\nThe main forces run upward, away from the inferior leads, writing deep S waves.",
+     "note": "Thaler ch4 p.203; Khan ch9 p.216–218"
+    },
+    {
+     "id": "m4-hemi-03",
+     "q": "By Thaler’s rule, which finding shows the axis is beyond −30°?",
+     "a": "Lead II negative\n\nLead II sits at +60°; a negative QRS there puts the axis more negative than −30°.",
+     "note": "Thaler ch4 p.203–204; Khan ch9 p.217–218"
+    },
+    {
+     "id": "m4-hemi-04",
+     "q": "LAFB widens the QRS beyond 0.12 s.\nTrue or false?",
+     "a": "False. The other fascicles conduct normally, so ventricular depolarisation is not delayed.",
+     "note": "Thaler ch4 p.205; Khan ch9 p.218"
+    },
+    {
+     "id": "m4-hemi-05",
+     "q": "Axis −60°, QRS 0.09 s, otherwise normal ECG. Most likely",
+     "a": "LAFB\n\nNarrow QRS, marked left axis and no other cause: left anterior hemiblock.",
+     "note": "Thaler ch4 p.204–205"
+    },
+    {
+     "id": "m4-hemi-06",
+     "q": "LPFB shifts the axis to",
+     "a": "Right, about +120° or more\n\nWith the posterior fascicle blocked, activation runs downward and rightward.",
+     "note": "Thaler ch4 p.204–205; Khan ch9 p.218–219"
+    },
+    {
+     "id": "m4-hemi-07",
+     "q": "Right axis deviation in a patient with severe COPD is diagnostic of LPFB.\nTrue or false?",
+     "a": "False. Lung disease is itself a cause of right axis deviation, so LPFB cannot be diagnosed.",
+     "note": "Thaler ch4 p.204; Khan ch9 p.215, 219"
+    },
+    {
+     "id": "m4-hemi-08",
+     "q": "QRS 0.14 s, rSR′ in V1, axis −60°. This is",
+     "a": "RBBB with LAFB\n\nThe rSR′ and width give RBBB; the marked left axis adds left anterior hemiblock.",
+     "note": "Thaler ch4 p.207–208; Khan ch9 p.219"
+    },
+    {
+     "id": "m4-hemi-09",
+     "q": "Put Thaler’s order for reading combined blocks",
+     "a": "P–QRS relationship: is there AV block? → V1–V6: is there bundle branch block? → Axis: is there a hemiblock?\n\nWork from the top of the conduction system down: AV node, bundles, fascicles.",
+     "note": "Thaler ch4 p.211–212"
+    },
+    {
+     "id": "m4-hemi-10",
+     "q": "During an acute MI a patient suddenly develops AV block plus a new bundle branch block. Thaler’s advice",
+     "a": "Pacing, usually temporary\n\nThis combination in acute MI warrants a pacemaker, usually removed once the acute event settles.",
+     "note": "Thaler ch4 p.212; Khan ch9 p.219"
+    }
+   ]
+  },
+  {
+   "id": "m4-pre",
+   "name": "Preexcitation",
+   "desc": "Find the delta wave and know why WPW matters.",
+   "cards": [
+    {
+     "id": "m4-pre-01",
+     "q": "An accessory pathway lets the impulse",
+     "a": "Bypass the AV node delay\n\nThe pathway is a short circuit from atrium to ventricle that skips the AV node.",
+     "note": "Thaler ch5 p.222–223"
+    },
+    {
+     "id": "m4-pre-02",
+     "q": "Explain: WPW sign 1: PR under 0.12 s",
+     "a": "In Wolff–Parkinson–White (WPW) ventricular activation starts early, so the PR interval is shorter than 0.12 s: under three small squares.",
+     "note": "Thaler ch5 p.224; Khan ch11 p.271"
+    },
+    {
+     "id": "m4-pre-03",
+     "q": "Explain: WPW sign 2: the delta wave",
+     "a": "The early-activated muscle conducts slowly, so the QRS begins with a slurred upstroke: the delta wave. It may show in only some leads, so scan all 12.",
+     "note": "Thaler ch5 p.224; Khan ch11 p.271"
+    },
+    {
+     "id": "m4-pre-04",
+     "q": "Why is the QRS wide in WPW?",
+     "a": "Part of the ventricle is activated early\n\nUnlike bundle branch block, WPW widens the QRS by premature activation.",
+     "note": "Thaler ch5 p.224; Khan ch11 p.271"
+    },
+    {
+     "id": "m4-pre-05",
+     "q": "In orthodromic AVRT the QRS is",
+     "a": "Narrow, as the AV node carries it down\n\nThe ventricles are activated through the normal bundle branches, so the QRS is narrow.",
+     "note": "Thaler ch5 p.229–231; Khan ch11 p.272–276"
+    },
+    {
+     "id": "m4-pre-06",
+     "q": "An unstable wide-complex tachycardia that might be antidromic AVRT should be treated as VT.\nTrue or false?",
+     "a": "True. VT is far commoner and can be lethal, so assume VT when you cannot tell.",
+     "note": "Thaler ch5 p.230–231; Khan ch11 p.276"
+    },
+    {
+     "id": "m4-pre-07",
+     "q": "Irregular, about 260/min, wide complexes of changing shape. Think of",
+     "a": "AF conducted down an accessory pathway\n\nVery fast, irregular and bizarre wide beats are the signature of preexcited AF.",
+     "note": "Thaler ch5 p.232; Khan ch11 p.276, ch12 p.392"
+    },
+    {
+     "id": "m4-pre-08",
+     "q": "Short PR, narrow QRS, no delta wave, and episodes of palpitations. Name it",
+     "a": "Lown–Ganong–Levine syndrome\n\nShort PR without a delta wave plus a tachyarrhythmia is Lown–Ganong–Levine syndrome.",
+     "note": "Thaler ch5 p.225, 233"
+    },
+    {
+     "id": "m4-pre-09",
+     "q": "A symptomatic accessory pathway can be mapped and ablated at electrophysiology study.\nTrue or false?",
+     "a": "True. Mapping and ablation is routine for symptomatic WPW and resolves the problem.",
+     "note": "Thaler ch5 p.227, 232–233"
+    },
+    {
+     "id": "m4-pre-10",
+     "q": "Inferior Q-like waves with a PR of 0.10 s. Before calling an old inferior MI, consider",
+     "a": "WPW pseudoinfarct pattern\n\nNegative delta waves mimic Q waves; the short PR gives WPW away.",
+     "note": "Thaler ch5 p.234, ch6 p.276; Khan ch11 p.271–272"
+    }
+   ]
+  },
+  {
+   "id": "m4-atria",
+   "name": "Atrial enlargement",
+   "desc": "Read lead II and V1 for right and left atrial enlargement.",
+   "cards": [
+    {
+     "id": "m4-atria-01",
+     "q": "The second half of the P wave reflects",
+     "a": "The left atrium\n\nThe impulse starts in the right atrium near the sinus node and reaches the left atrium last.",
+     "note": "Thaler ch2 p.98–99; Khan ch3 p.81"
+    },
+    {
+     "id": "m4-atria-02",
+     "q": "Why is the P wave in V1 useful?",
+     "a": "It is biphasic, separating right and left atria\n\nV1 lies perpendicular to atrial current, splitting the P into right and left parts.",
+     "note": "Thaler ch2 p.99–100"
+    },
+    {
+     "id": "m4-atria-03",
+     "q": "The P-wave height in lead II that defines right atrial enlargement",
+     "a": "2.5 mm\n\nBoth books use 2.5 mm in the inferior leads.",
+     "note": "Thaler ch2 p.100–101; Khan ch7 p.181"
+    },
+    {
+     "id": "m4-atria-04",
+     "q": "A peaked 3 mm P wave in lead II most suggests",
+     "a": "Chronic lung disease\n\nRight atrial enlargement is classically caused by lung disease and pulmonary hypertension.",
+     "note": "Thaler ch2 p.101; Khan ch3 p.83, ch7 p.182–184"
+    },
+    {
+     "id": "m4-atria-05",
+     "q": "A 2 mm positive first half of the P wave in V1 suggests right atrial enlargement.\nTrue or false?",
+     "a": "True. Khan: an initial positive P component of 1.5 mm or more in V1–V2 indicates right atrial enlargement.",
+     "note": "Khan ch7 p.181"
+    },
+    {
+     "id": "m4-atria-06",
+     "q": "Explain: Left atrial enlargement: broad, notched P",
+     "a": "In left atrial enlargement the left-atrial part lasts longer, so the P widens to 0.12 s or more in lead II. It is often notched, with peaks more than 0.04 s apart.",
+     "note": "Thaler ch2 p.101–102; Khan ch3 p.82, ch7 p.179"
+    },
+    {
+     "id": "m4-atria-07",
+     "q": "The terminal negative P in V1 suggests LAE when it is",
+     "a": "At least 1 mm deep and 0.04 s wide\n\nOne small square deep by one small square wide is the threshold in both books.",
+     "note": "Thaler ch2 p.101–102; Khan ch7 p.179"
+    },
+    {
+     "id": "m4-atria-08",
+     "q": "Which is a classic cause of P mitrale?",
+     "a": "Mitral stenosis\n\nMitral valve disease loads the left atrium, which then enlarges.",
+     "note": "Thaler ch2 p.102; Khan ch7 p.181"
+    },
+    {
+     "id": "m4-atria-09",
+     "q": "P mitrale always means the left atrium is dilated on echo.\nTrue or false?",
+     "a": "False. ECG atrial changes can occur without enlargement, from pressure, volume or conduction changes.",
+     "note": "Thaler ch2 p.95, 102; Khan ch7 p.180–181"
+    }
+   ]
+  },
+  {
+   "id": "m4-vent",
+   "name": "Ventricular hypertrophy",
+   "desc": "Apply voltage criteria for LVH and RVH, and know their limits.",
+   "cards": [
+    {
+     "id": "m4-vent-01",
+     "q": "The key ECG change of ventricular hypertrophy is",
+     "a": "Increased QRS amplitude\n\nHypertrophy criteria are built on increased voltage; the QRS rarely exceeds 0.10 s.",
+     "note": "Thaler ch2 p.77–79, 110"
+    },
+    {
+     "id": "m4-vent-02",
+     "q": "S in V1 is 14 mm and R in V5 is 18 mm. Sokolow–Lyon is",
+     "a": "Not met: 32 mm is not over 35\n\n14 + 18 = 32 mm, which does not exceed 35 mm.",
+     "note": "Thaler ch2 p.107–108; Khan ch7 p.185"
+    },
+    {
+     "id": "m4-vent-03",
+     "q": "An R wave of 13 mm in aVL meets a limb-lead criterion for LVH.\nTrue or false?",
+     "a": "True. R in aVL over 11 mm is a voltage criterion in both books.",
+     "note": "Thaler ch2 p.109; Khan ch7 p.185"
+    },
+    {
+     "id": "m4-vent-04",
+     "q": "A woman has R in aVL 9 mm and S in V3 13 mm. Cornell is",
+     "a": "Met: 22 mm exceeds 20 in women\n\nThe threshold is 20 mm for women; 9 + 13 = 22 mm.",
+     "note": "Thaler ch2 p.109; Khan ch7 p.185"
+    },
+    {
+     "id": "m4-vent-05",
+     "q": "Voltage criterion met plus left axis, nothing else. Romhilt–Estes gives",
+     "a": "5 points: LVH\n\nVoltage 3 plus left axis 2 makes 5, which indicates LVH.",
+     "note": "Khan ch7 p.187"
+    },
+    {
+     "id": "m4-vent-06",
+     "q": "Name the leads with strain-type ST depression",
+     "a": "I, aVL, V5, V6\n\nRepolarisation changes appear in the leads with the tallest R waves, over the left ventricle.",
+     "note": "Thaler ch2 p.111–113; Khan ch7 p.184"
+    },
+    {
+     "id": "m4-vent-07",
+     "q": "A hypertensive patient has a normal ECG. This",
+     "a": "Does not rule out LVH\n\nThe ECG misses about half of echo-proven LVH: sensitivity is low.",
+     "note": "Thaler ch2 p.108, 114; Khan ch7 p.184, 187"
+    },
+    {
+     "id": "m4-vent-08",
+     "q": "Explain: RVH: R bigger than S in V1",
+     "a": "In right ventricular hypertrophy (RVH) the right ventricle dominates the chest leads. V1 shows an R wave larger than its S, while V6 shows an S larger than its R.",
+     "note": "Thaler ch2 p.104–106; Khan ch7 p.187"
+    },
+    {
+     "id": "m4-vent-09",
+     "q": "Which finding most supports RVH?",
+     "a": "Right axis deviation\n\nA dominant right ventricle pulls the mean QRS axis to the right.",
+     "note": "Thaler ch2 p.104–106; Khan ch7 p.187–191"
+    },
+    {
+     "id": "m4-vent-10",
+     "q": "In biventricular hypertrophy the right ventricular signs usually dominate the ECG.\nTrue or false?",
+     "a": "False. The normally dominant left ventricle usually obscures the right ventricular features.",
+     "note": "Thaler ch2 p.110"
+    }
+   ]
+  },
+  {
+   "id": "m4-pace",
+   "name": "Pacemakers",
+   "desc": "Recognise paced beats, the mode code and the common failures.",
+   "cards": [
+    {
+     "id": "m4-pace-01",
+     "q": "Explain: A pacemaker writes a spike",
+     "a": "A pacemaker is a battery and microchip under the skin, with leads in the right atrium and/or right ventricle. Each time it fires, it writes a sharp, narrow vertical spike.",
+     "note": "Thaler ch4 p.212–214; Khan ch10 p.239"
+    },
+    {
+     "id": "m4-pace-02",
+     "q": "Demand pacemaker set at 60/min; sinus rhythm at 80/min. You expect",
+     "a": "No pacing spikes\n\nThe device is inhibited while the native rate is above its set rate.",
+     "note": "Thaler ch4 p.213; Khan ch10 p.239"
+    },
+    {
+     "id": "m4-pace-03",
+     "q": "A right-ventricular paced QRS resembles",
+     "a": "LBBB\n\nRight ventricle first, left ventricle late: the same sequence as left bundle branch block.",
+     "note": "Thaler ch4 p.214; Khan ch10 p.239–241"
+    },
+    {
+     "id": "m4-pace-04",
+     "q": "Two spikes per beat: one before the P, one before a wide QRS. The pacemaker is",
+     "a": "Dual-chamber\n\nIt paces the atrium, then the ventricle after a set AV interval.",
+     "note": "Thaler ch4 p.214–215; Khan ch10 p.239–243"
+    },
+    {
+     "id": "m4-pace-05",
+     "q": "Match each mode",
+     "a": "VVI: Ventricular pacing, inhibited by a sensed QRS\nAAI: Atrial pacing, inhibited by a sensed P wave\nDDD: Paces and senses atrium and ventricle\nDOO: Fixed-rate pacing of both chambers\n\nThe letters read: chamber paced, chamber sensed, response (I inhibited, D dual, O none).",
+     "note": "Khan ch10 p.239"
+    },
+    {
+     "id": "m4-pace-06",
+     "q": "Pacing spikes appear on time but none is followed by a QRS. This is",
+     "a": "Failure to capture\n\nThe device fires, but the myocardium is not depolarised.",
+     "note": "Thaler ch4 p.219–220; Khan ch10 p.243–245"
+    },
+    {
+     "id": "m4-pace-07",
+     "q": "A spike falling just after a native QRS suggests the pacemaker failed to sense that beat.\nTrue or false?",
+     "a": "True. A sensing pacemaker would have been inhibited by the native QRS.",
+     "note": "Khan ch10 p.243–244"
+    },
+    {
+     "id": "m4-pace-08",
+     "q": "What does an ICD do when it detects VT?",
+     "a": "Rapid pacing or a shock\n\nAn ICD treats life-threatening ventricular arrhythmias with overdrive pacing or a shock.",
+     "note": "Thaler ch3 p.172–173"
+    },
+    {
+     "id": "m4-pace-09",
+     "q": "CRT benefits most a patient with poor LV function and",
+     "a": "A wide QRS such as LBBB\n\nCRT corrects the dyssynchrony that a wide QRS, especially LBBB, produces.",
+     "note": "Thaler ch4 p.216; Khan ch10 p.239"
+    },
+    {
+     "id": "m4-pace-10",
+     "q": "If you cannot see pacing spikes, a pacemaker is ruled out.\nTrue or false?",
+     "a": "False. Spikes can be tiny; wide QRS with left axis should still prompt you to look for a device.",
+     "note": "Thaler ch4 p.217"
+    }
+   ]
+  }
+ ]
+}
