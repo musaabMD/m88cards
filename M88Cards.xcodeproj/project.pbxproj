@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4A2A8D9DFDDAF37D88357273 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2B44D8250F7120BD750ABB /* ScoreView.swift */; };
 		568727409F30D06E348C3C09 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE7CAC82E6DB3964C8E1DC3 /* HomeView.swift */; };
-		5929FC9B6DD1D52DCF190B4E /* content in Resources */ = {isa = PBXBuildFile; fileRef = 034C9757E4B49C8AD027F398 /* content */; };
 		83FDB2261B545B6F53D85559 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D82A71A2FF8447A05C29E9 /* ReviewView.swift */; };
 		9C1689962A05791D8437F356 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF76784C109477096AD09C3D /* Models.swift */; };
 		A8006706E62236E8D19214B9 /* Glass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F970283CF95839D2EF15C4 /* Glass.swift */; };
@@ -22,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		034C9757E4B49C8AD027F398 /* content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = content; sourceTree = SOURCE_ROOT; };
 		0DE7CAC82E6DB3964C8E1DC3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0E2BB1AC0F4DB811AF00719C /* M88CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M88CardsApp.swift; sourceTree = "<group>"; };
 		5CD4F3429061DC4FC4EC85DA /* Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sync.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 		D183FF97383A22EF17D4E938 = {
 			isa = PBXGroup;
 			children = (
-				034C9757E4B49C8AD027F398 /* content */,
 				930AD0D852D29DD4E081CBA6 /* M88Cards */,
 				AEE44A7A6F174835B730BD9A /* Products */,
 			);
@@ -83,7 +80,6 @@
 			buildConfigurationList = 4CC71DD89F316F2AD354BDF3 /* Build configuration list for PBXNativeTarget "M88Cards" */;
 			buildPhases = (
 				02C1067D573EDEF155D0EC53 /* Sources */,
-				6C13989AB0170AD88D5E53F3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -129,17 +125,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		6C13989AB0170AD88D5E53F3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5929FC9B6DD1D52DCF190B4E /* content in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02C1067D573EDEF155D0EC53 /* Sources */ = {

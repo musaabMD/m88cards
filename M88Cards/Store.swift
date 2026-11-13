@@ -30,14 +30,12 @@ final class Store {
 
     func loadDecks() {
         var found: [Subject] = []
-        let bundled = Bundle.main.urls(forResourcesWithExtension: "json", subdirectory: "content") ?? []
         let imported = (try? fm.contentsOfDirectory(at: importedDecksDir, includingPropertiesForKeys: nil)) ?? []
-        for url in bundled + imported where url.pathExtension == "json" {
+        for url in imported where url.pathExtension == "json" {
             if let data = try? Data(contentsOf: url) {
                 found.append(contentsOf: Store.decode(data))
             }
         }
-        // Imported decks with the same id replace bundled ones.
         var byID: [String: Subject] = [:]
         var order: [String] = []
         for s in found { if byID[s.id] == nil { order.append(s.id) }; byID[s.id] = s }

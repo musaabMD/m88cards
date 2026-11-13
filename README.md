@@ -15,7 +15,7 @@ Select your team under Signing & Capabilities, then run on your iPhone.
 
 ## Content
 
-All card content lives in one folder, `content/`, at the repo root. One JSON file = one subject:
+All card content lives in one folder, `content/`, at the repo root. The app bundles nothing: tap Sync on the Home screen and it mirrors this folder exactly (added files appear, removed files disappear). One JSON file = one subject:
 
 ```json
 { "id": "anatomy", "name": "Anatomy", "color": "#2563EB",

@@ -28,8 +28,8 @@ struct HomeView: View {
         NavigationStack {
             List {
                 if store.subjects.isEmpty {
-                    ContentUnavailableView("No decks yet", systemImage: "rectangle.on.rectangle.angled",
-                                           description: Text("Import a JSON, CSV or TSV file from the + button."))
+                    ContentUnavailableView("No decks yet", systemImage: "arrow.down.circle",
+                                           description: Text("Tap Sync to download the content folder from GitHub."))
                 }
                 ForEach(filtered) { subject in
                     Section {
@@ -51,11 +51,15 @@ struct HomeView: View {
                     NavigationLink { ReviewView() } label: { Image(systemName: "tray.full") }
                 }
                 ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        Task { if await sync.sync(into: store.importedDecksDir) >= 0 { store.loadDecks() } }
+                    } label: {
+                        if sync.busy { ProgressView() } else { Label("Sync", systemImage: "arrow.down.circle") }
+                    }
+                    .disabled(sync.busy)
+                }
+                ToolbarItem(placement: .topBarTrailing) {
                     Menu {
-                        Button {
-                            Task { if await sync.sync(into: store.importedDecksDir) > 0 { store.loadDecks() } }
-                        } label: { Label("Sync content from GitHub", systemImage: "arrow.down.circle") }
-                        .disabled(sync.busy)
                         Button { showImporter = true } label: { Label("Import file…", systemImage: "square.and.arrow.down") }
                         Button { showStats = true } label: { Label("Stats", systemImage: "chart.bar") }
                     } label: { Image(systemName: "ellipsis") }

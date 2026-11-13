@@ -20,9 +20,6 @@ targets:
     platform: iOS
     sources:
       - path: M88Cards
-      - path: content
-        type: folder
-        buildPhase: resources
     info:
       path: M88Cards/Info.plist
       properties:
