@@ -13,107 +13,107 @@
     {
       "id": "pm-vacc",
       "name": "Vacc",
-      "desc": "Saudi MOH National Immunization Schedule (uploaded older edition); verify current guidance",
+      "desc": "Saudi MOH 2019 childhood immunization schedule: age-grouped recall; historical reference, not current clinical guidance",
       "cards": [
         {
           "id": "pm-vacc-001",
-          "q": "How often is influenza vaccination given?",
-          "a": "One dose annually."
+          "q": "At birth: which vaccine?",
+          "a": "HepB."
         },
         {
           "id": "pm-vacc-002",
-          "q": "How often is a Td booster given to adults?",
-          "a": "Every 10 years after a Tdap dose."
+          "q": "At 2 months: list ALL vaccines.",
+          "a": "HepB + RV + DTaP + Hib + PCV + IPV."
         },
         {
           "id": "pm-vacc-003",
-          "q": "When is Tdap recommended during pregnancy?",
-          "a": "Once per pregnancy, between 27 and 36 weeks."
+          "q": "At 4 months: list ALL vaccines.",
+          "a": "HepB + RV + DTaP + Hib + PCV + IPV."
         },
         {
           "id": "pm-vacc-004",
-          "q": "Who should receive MMR if immunity is absent?",
-          "a": "Unvaccinated people without evidence of immunity or prior disease."
+          "q": "At 6 months: list ALL vaccines.",
+          "a": "BCG + HepB + RV + DTaP + Hib + PCV + IPV + OPV."
         },
         {
           "id": "pm-vacc-005",
-          "q": "How many MMR doses may be needed in susceptible adults?",
-          "a": "One or two doses, depending on indication."
+          "q": "At 9 months: which vaccines?",
+          "a": "Measles (single antigen) + MCV4."
         },
         {
           "id": "pm-vacc-006",
-          "q": "What is the varicella vaccine schedule for nonimmune adults?",
-          "a": "Two doses, 8 weeks apart, per the supplied schedule."
+          "q": "At 12 months: list ALL vaccines.",
+          "a": "PCV + OPV + MCV4 + MMR."
         },
         {
           "id": "pm-vacc-007",
-          "q": "Who is targeted for herpes zoster vaccination in this schedule?",
-          "a": "Adults aged 50 years or older."
+          "q": "At 18 months: list ALL vaccines.",
+          "a": "DTaP + Hib + OPV + HepA + Varicella + MMR."
         },
         {
           "id": "pm-vacc-008",
-          "q": "What zoster dose interval is shown in this schedule?",
-          "a": "Two doses, 2–6 months apart."
+          "q": "At 24 months: which vaccine?",
+          "a": "HepA."
         },
         {
           "id": "pm-vacc-009",
-          "q": "Which HPV age group is listed for catch-up vaccination?",
-          "a": "Females aged 15–26 years, in the supplied schedule."
+          "q": "At 4–6 years: list ALL vaccines.",
+          "a": "DTaP + OPV + Varicella + MMR."
         },
         {
           "id": "pm-vacc-010",
-          "q": "What is the HPV catch-up dosing schedule shown?",
-          "a": "Three doses at 0, 1–2, and 6 months."
+          "q": "At 11 years: which vaccines?",
+          "a": "Tdap + HPV (females in this 2019 schedule)."
         },
         {
           "id": "pm-vacc-011",
-          "q": "What does PPSV23 stand for?",
-          "a": "23-valent pneumococcal polysaccharide vaccine."
+          "q": "At 12 years: which vaccine?",
+          "a": "HPV (females in this 2019 schedule)."
         },
         {
           "id": "pm-vacc-012",
-          "q": "What does PCV stand for?",
-          "a": "Pneumococcal conjugate vaccine."
+          "q": "At 18 years: which vaccine?",
+          "a": "MCV4."
         },
         {
           "id": "pm-vacc-013",
-          "q": "Which adults are listed for PPSV23 vaccination?",
-          "a": "Adults ≥65 years and adults with specified comorbidities or immunocompromise."
+          "q": "From what age is annual influenza vaccine listed?",
+          "a": "From 6 months onward; annually."
         },
         {
           "id": "pm-vacc-014",
-          "q": "What does the schedule say about PCV for adults ≥65?",
-          "a": "One dose, or catch-up after prior PCV13 depending on history."
+          "q": "Which ages share the same 6-vaccine set?",
+          "a": "2 and 4 months: HepB + RV + DTaP + Hib + PCV + IPV."
         },
         {
           "id": "pm-vacc-015",
-          "q": "What is the adult hepatitis B schedule shown?",
-          "a": "Three doses at 0, 1, and 6 months if not previously immunized or immunity is absent."
+          "q": "What is added at 6 months versus 2/4 months?",
+          "a": "BCG and OPV (on top of the same six vaccines)."
         },
         {
           "id": "pm-vacc-016",
-          "q": "How often is the MCV4 booster given if risk persists?",
-          "a": "Every 5 years, after an indicated initial dose."
+          "q": "Which vaccines are given at both 9 and 12 months?",
+          "a": "MCV4."
         },
         {
           "id": "pm-vacc-017",
-          "q": "What does MCV4 protect against?",
-          "a": "Meningococcal serogroups A, C, W, and Y."
+          "q": "Which vaccines repeat at 12 and 18 months?",
+          "a": "MMR and OPV."
         },
         {
           "id": "pm-vacc-018",
-          "q": "Which vaccine is recommended annually in the adult table?",
-          "a": "Influenza vaccine."
+          "q": "Which vaccines repeat at 18 months and 4–6 years?",
+          "a": "DTaP + OPV + Varicella + MMR."
         },
         {
           "id": "pm-vacc-019",
-          "q": "Which vaccine is specifically timed in each pregnancy?",
-          "a": "Tdap."
+          "q": "Which ages receive HepA in this schedule?",
+          "a": "18 and 24 months."
         },
         {
           "id": "pm-vacc-020",
-          "q": "What is the difference between Tdap and Td?",
-          "a": "Tdap includes pertussis protection; Td contains tetanus and diphtheria toxoids."
+          "q": "Which ages receive HPV in this schedule?",
+          "a": "11 and 12 years (females only in the 2019 chart)."
         }
       ]
     },
