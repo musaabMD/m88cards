@@ -13,59 +13,8 @@
     {
       "id": "pm-vacc",
       "name": "Vacc",
-      "desc": "Integrated USMLE-style Anki recall: Saudi MOH 2019 schedule plus vaccine mechanisms and clinical risk groups. Historical schedule, verify current guidance.",
-      "cards": [
-        {
-          "id": "pm-vacc-001",
-          "q": "Infant backbone: what is given at 2, 4, and 6 months in this chart?",
-          "a": "2 & 4 mo: HepB, RV, DTaP, Hib, PCV, IPV. 6 mo: same six + BCG + OPV. Anchor: 2=4; 6 adds BCG/OPV."
-        },
-        {
-          "id": "pm-vacc-002",
-          "q": "Birth→12 mo: recite the entire age-based schedule.",
-          "a": "Birth HepB; 2/4 mo HepB+RV+DTaP+Hib+PCV+IPV; 6 mo same +BCG+OPV; 9 mo measles+MCV4; 12 mo PCV+OPV+MCV4+MMR."
-        },
-        {
-          "id": "pm-vacc-003",
-          "q": "Compare vaccines at 12, 18, 24 mo and 4–6 yr.",
-          "a": "12: PCV+OPV+MCV4+MMR. 18: DTaP+Hib+OPV+HepA+Varicella+MMR. 24: HepA. 4–6 yr: DTaP+OPV+Varicella+MMR."
-        },
-        {
-          "id": "pm-vacc-004",
-          "q": "Which scheduled vaccines are live? Contrast OPV vs IPV.",
-          "a": "Live: BCG, RV, OPV, MMR, varicella. IPV is inactivated; OPV is live oral. Live vaccines generally avoided in severe immunodeficiency."
-        },
-        {
-          "id": "pm-vacc-005",
-          "q": "At 9 vs 12 mo, what measles and meningococcal vaccines appear?",
-          "a": "9 mo: measles-only + MCV4. 12 mo: MMR + MCV4 (also PCV+OPV). MMR covers measles/mumps/rubella; MCV4 covers A,C,W,Y."
-        },
-        {
-          "id": "pm-vacc-006",
-          "q": "What are the adolescent vaccine anchors in this 2019 chart?",
-          "a": "11 yr: Tdap+HPV; 12 yr: HPV; 18 yr: MCV4. Chart lists HPV for females; current eligibility/schedules may differ."
-        },
-        {
-          "id": "pm-vacc-007",
-          "q": "Pregnancy: what vaccines are recommended vs avoided?",
-          "a": "Tdap each pregnancy at 27–36 wk; inactivated influenza annually in season. MMR and varicella are live and contraindicated; HepB if indicated."
-        },
-        {
-          "id": "pm-vacc-008",
-          "q": "Adult schedule: group the major intervals and indications.",
-          "a": "Flu yearly; Td/Tdap booster every 10 yr; MMR 1–2 doses if susceptible; varicella 2 doses; HepB 0,1,6 mo; zoster 2 doses 2–6 mo apart (chart); MCV4 booster q5yr if risk."
-        },
-        {
-          "id": "pm-vacc-009",
-          "q": "PCV vs PPSV23: compare mechanism and clinical implications.",
-          "a": "PCV: conjugate, T-cell-dependent, immune memory. PPSV23: polysaccharide, mainly T-cell-independent; poor responses in children <2 yr. Adult use is age/risk/history dependent."
-        },
-        {
-          "id": "pm-vacc-010",
-          "q": "Which risk groups require special vaccination attention?",
-          "a": "Asplenia: pneumococcal, meningococcal, Hib. Immunocompromise: risk-based vaccines; caution with live vaccines. Liver disease: assess HepA/HepB. Older adults: flu, pneumococcal, zoster."
-        }
-      ]
+      "desc": "Vaccinations",
+      "cards": []
     },
     {
       "id": "pm-meds",
