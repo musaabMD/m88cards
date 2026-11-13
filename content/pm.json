@@ -1,0 +1,26 @@
+{
+  "id": "pm",
+  "name": "PM",
+  "blurb": "Preventive Medicine",
+  "color": "#0D9488",
+  "topics": [
+    {
+      "id": "pm-id",
+      "name": "ID",
+      "desc": "Infectious Diseases",
+      "cards": []
+    },
+    {
+      "id": "pm-vacc",
+      "name": "Vacc",
+      "desc": "Vaccinations",
+      "cards": []
+    },
+    {
+      "id": "pm-meds",
+      "name": "Meds",
+      "desc": "Medications",
+      "cards": []
+    }
+  ]
+}
