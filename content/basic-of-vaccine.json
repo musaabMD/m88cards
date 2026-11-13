@@ -1,0 +1,140 @@
+{
+  "id": "basic-of-vaccine",
+  "name": "Basic of Vaccine",
+  "blurb": "USMLE vaccine platforms, immunology, mechanisms, contraindications and examples",
+  "color": "#0D9488",
+  "topics": [
+    {
+      "id": "vaccine-basics",
+      "name": "Vaccine basics",
+      "desc": "Integrated high-yield Anki cards; not a clinical immunization schedule",
+      "cards": [
+        {
+          "id": "vaccine-basics-001",
+          "q": "Vaccination vs passive immunization: what is the distinction?",
+          "a": "Vaccination induces active immunity: host B/T-cell response and memory, with delayed onset. Passive immunity supplies ready-made antibodies: immediate, temporary protection, no memory."
+        },
+        {
+          "id": "vaccine-basics-002",
+          "q": "Live attenuated vaccines: mechanism, immune response, pros/cons?",
+          "a": "Weakened living organism replicates transiently → strong humoral + cellular immunity, often durable. Risks: disease in severely immunocompromised hosts; rare reversion for some vaccines."
+        },
+        {
+          "id": "vaccine-basics-003",
+          "q": "Live vaccines: examples and contraindications?",
+          "a": "MMR, varicella, rotavirus, BCG, yellow fever, intranasal flu, oral polio (Sabin), oral Ty21a typhoid, smallpox; oral adenovirus in military. Avoid in pregnancy and severe immunodeficiency."
+        },
+        {
+          "id": "vaccine-basics-004",
+          "q": "HIV and live vaccines: what is the nuance?",
+          "a": "Some live vaccines (e.g., MMR, varicella) may be used in selected patients with HIV and adequate immune function (often CD4 ≥200 cells/µL in adults); assess vaccine-specific guidance."
+        },
+        {
+          "id": "vaccine-basics-005",
+          "q": "Killed/inactivated vaccines: mechanism, response, advantages/limitations?",
+          "a": "Whole pathogen inactivated by heat/chemicals; retains epitopes but cannot replicate. Mainly antibody response; safer than live, usually less cellular immunity and needs boosters/adjuvants."
+        },
+        {
+          "id": "vaccine-basics-006",
+          "q": "Killed/inactivated: classic examples and formulation traps?",
+          "a": "Hepatitis A, rabies, inactivated IM influenza, inactivated polio (Salk/IPV). Typhoid Vi is a purified polysaccharide, NOT whole-killed. Oral Ty21a typhoid is live."
+        },
+        {
+          "id": "vaccine-basics-007",
+          "q": "Subunit vaccine: definition, response, examples?",
+          "a": "Contains selected pathogen antigens, not whole organism. Often mainly humoral response, sometimes needs adjuvant/boosters. Examples: acellular pertussis; HepB and HPV are recombinant subunits."
+        },
+        {
+          "id": "vaccine-basics-008",
+          "q": "Recombinant protein vaccine: what makes it 'recombinant'?",
+          "a": "Antigen is manufactured by genetically engineered cells; 'recombinant' describes production, not a unique immune mechanism. Examples: HepB HBsAg, HPV L1 VLPs, zoster glycoprotein E."
+        },
+        {
+          "id": "vaccine-basics-009",
+          "q": "Pure polysaccharide vaccine: mechanism, immune response, age limitation?",
+          "a": "Unconjugated capsular sugar cross-links B-cell receptors → T-independent (TI-2), mainly IgM, limited class switching/memory; weak in children <2 yr. Example: PPSV23."
+        },
+        {
+          "id": "vaccine-basics-010",
+          "q": "Conjugate vaccine: how does it create T-cell help?",
+          "a": "Capsular polysaccharide linked to carrier protein. Sugar-specific B cell internalizes it, presents carrier peptides on MHC II → CD4 T-cell help → IgG switching, affinity maturation, memory."
+        },
+        {
+          "id": "vaccine-basics-011",
+          "q": "Pure polysaccharide vs conjugate: compare high-yield outcomes.",
+          "a": "PPSV23: sugar alone, T-independent, weak memory, poor <2 yr. PCV/Hib/MenACWY conjugates: sugar+protein, T-dependent, strong memory, effective in infants."
+        },
+        {
+          "id": "vaccine-basics-012",
+          "q": "What do subunit, recombinant, polysaccharide and conjugate each describe?",
+          "a": "Subunit = only part of pathogen. Recombinant = how antigen is made. Polysaccharide = sugar antigen. Conjugate = sugar chemically linked to protein. Categories overlap."
+        },
+        {
+          "id": "vaccine-basics-013",
+          "q": "Which vaccine examples belong to which subunit family?",
+          "a": "HepB = recombinant HBsAg; HPV = recombinant L1 VLP; aP = purified pertussis proteins; PPSV23 = pure polysaccharide; PCV/Hib/MenACWY = conjugates; Shingrix = recombinant gE + adjuvant."
+        },
+        {
+          "id": "vaccine-basics-014",
+          "q": "Toxoid vaccines: what is injected, what is protected against?",
+          "a": "Inactivated bacterial exotoxin retains antigenicity without toxicity → neutralizing antitoxin antibodies. Examples: tetanus and diphtheria. Antibody titers wane → boosters."
+        },
+        {
+          "id": "vaccine-basics-015",
+          "q": "Toxoid vs conjugate: what role does protein play?",
+          "a": "Toxoid: detoxified toxin itself is target of protective antibodies. Conjugate: carrier protein recruits helper T cells to improve response against linked capsular sugar."
+        },
+        {
+          "id": "vaccine-basics-016",
+          "q": "mRNA vaccines: mechanism and immune response?",
+          "a": "Lipid nanoparticles deliver mRNA into cytoplasm → ribosomes make antigen → humoral + cellular responses. mRNA does not need to enter nucleus or alter DNA."
+        },
+        {
+          "id": "vaccine-basics-017",
+          "q": "mRNA vaccines: advantages, adverse effects and example?",
+          "a": "Rapid design; no live pathogen; can be used in pregnancy when indicated. Local pain, fatigue, headache, myalgia; rare myocarditis/pericarditis (especially young males). Example: SARS-CoV-2."
+        },
+        {
+          "id": "vaccine-basics-018",
+          "q": "Live vs inactivated influenza and polio: distinguish routes.",
+          "a": "Influenza: live attenuated intranasal vs inactivated IM. Polio: live oral Sabin (OPV) vs inactivated injectable Salk (IPV). Route and formulation change contraindications."
+        },
+        {
+          "id": "vaccine-basics-019",
+          "q": "Why do protein conjugates work well in infants <2 years?",
+          "a": "Infants respond poorly to TI-2 capsular polysaccharides. Carrier peptides activate CD4 helper T cells → germinal centers, class switching and memory."
+        },
+        {
+          "id": "vaccine-basics-020",
+          "q": "Asplenia: which pathogens/vaccines are especially important?",
+          "a": "Encapsulated bacteria: Streptococcus pneumoniae, Neisseria meningitidis, Haemophilus influenzae type b. Review pneumococcal, meningococcal, Hib vaccines."
+        },
+        {
+          "id": "vaccine-basics-021",
+          "q": "Pregnancy: live vs non-live vaccine principle?",
+          "a": "Live MMR/varicella contraindicated. Inactivated influenza and Tdap are recommended when indicated; mRNA COVID-19 vaccines can be used under current recommendations."
+        },
+        {
+          "id": "vaccine-basics-022",
+          "q": "Humoral vs cellular immunity: which vaccine platforms tend to induce each?",
+          "a": "Live attenuated and mRNA can elicit both B- and T-cell responses. Killed, toxoid and conventional protein subunits mainly stimulate antibody responses; adjuvants alter response."
+        },
+        {
+          "id": "vaccine-basics-023",
+          "q": "What is an adjuvant and why is it used?",
+          "a": "An added immune stimulant that enhances antigen presentation/innate signaling and antibody responses; particularly useful with inactivated or subunit vaccines."
+        },
+        {
+          "id": "vaccine-basics-024",
+          "q": "What is a virus-like particle (VLP)?",
+          "a": "Self-assembled viral structural proteins without viral genome; noninfectious but display repetitive antigens. Example: recombinant HPV L1 vaccines."
+        },
+        {
+          "id": "vaccine-basics-025",
+          "q": "What are the two classic vaccine USMLE traps?",
+          "a": "1) PPSV23 (T-independent) vs PCV (T-dependent). 2) OPV live vs IPV killed; intranasal flu live vs IM flu inactivated."
+        }
+      ]
+    }
+  ]
+}
