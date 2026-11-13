@@ -8,7 +8,7 @@ struct HomeView: View {
     @State private var quiz: QuizScope?
     @State private var showImporter = false
     @State private var showStats = false
-    @State private var showSync = false
+    @State private var sync = GitHubSync()
 
     private var filtered: [Subject] {
         let q = search.trimmingCharacters(in: .whitespaces).lowercased()
@@ -52,7 +52,10 @@ struct HomeView: View {
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Menu {
-                        Button { showSync = true } label: { Label("Sync content from GitHub", systemImage: "arrow.down.circle") }
+                        Button {
+                            Task { if await sync.sync(into: store.importedDecksDir) > 0 { store.loadDecks() } }
+                        } label: { Label("Sync content from GitHub", systemImage: "arrow.down.circle") }
+                        .disabled(sync.busy)
                         Button { showImporter = true } label: { Label("Import file…", systemImage: "square.and.arrow.down") }
                         Button { showStats = true } label: { Label("Stats", systemImage: "chart.bar") }
                     } label: { Image(systemName: "ellipsis") }
@@ -64,7 +67,9 @@ struct HomeView: View {
                 Button("OK") {}
             } message: { Text(store.importError ?? "") }
             .sheet(isPresented: $showStats) { StatsView() }
-            .sheet(isPresented: $showSync) { SyncView() }
+            .alert("Sync", isPresented: Binding(get: { sync.message != nil }, set: { if !$0 { sync.message = nil } })) {
+                Button("OK") {}
+            } message: { Text(sync.message ?? "") }
             .fileImporter(isPresented: $showImporter, allowedContentTypes: [.json, .commaSeparatedText, .tabSeparatedText, .plainText], allowsMultipleSelection: true) { result in
                 if case .success(let urls) = result { urls.forEach(store.importDeck(from:)) }
             }
