@@ -1,0 +1,20 @@
+{
+  "id": "fa1",
+  "name": "FA1",
+  "blurb": "First Aid 1",
+  "color": "#2563EB",
+  "topics": [
+    {
+      "id": "fa1-micro",
+      "name": "Micro",
+      "desc": "Microbiology",
+      "cards": []
+    },
+    {
+      "id": "fa1-bio",
+      "name": "Bio",
+      "desc": "Biochemistry",
+      "cards": []
+    }
+  ]
+}
