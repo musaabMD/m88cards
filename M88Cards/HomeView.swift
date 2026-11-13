@@ -8,6 +8,7 @@ struct HomeView: View {
     @State private var quiz: QuizScope?
     @State private var showImporter = false
     @State private var showStats = false
+    @State private var showSync = false
 
     private var filtered: [Subject] {
         let q = search.trimmingCharacters(in: .whitespaces).lowercased()
@@ -44,14 +45,15 @@ struct HomeView: View {
             .listSectionSpacing(10)
             .navigationTitle("Cards")
             .navigationDestination(for: Topic.self) { topic in TopicView(topic: topic) }
-            .searchable(text: $search, prompt: "Search \(store.allCards.count) cards")
+            .searchable(text: $search, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search \(store.allCards.count) cards")
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     NavigationLink { ReviewView() } label: { Image(systemName: "tray.full") }
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Menu {
-                        Button { showImporter = true } label: { Label("Import deck…", systemImage: "square.and.arrow.down") }
+                        Button { showSync = true } label: { Label("Sync content from GitHub", systemImage: "arrow.down.circle") }
+                        Button { showImporter = true } label: { Label("Import file…", systemImage: "square.and.arrow.down") }
                         Button { showStats = true } label: { Label("Stats", systemImage: "chart.bar") }
                     } label: { Image(systemName: "ellipsis") }
                 }
@@ -62,6 +64,7 @@ struct HomeView: View {
                 Button("OK") {}
             } message: { Text(store.importError ?? "") }
             .sheet(isPresented: $showStats) { StatsView() }
+            .sheet(isPresented: $showSync) { SyncView() }
             .fileImporter(isPresented: $showImporter, allowedContentTypes: [.json, .commaSeparatedText, .tabSeparatedText, .plainText], allowsMultipleSelection: true) { result in
                 if case .success(let urls) = result { urls.forEach(store.importDeck(from:)) }
             }
@@ -119,22 +122,17 @@ struct HomeView: View {
         .padding(.leading, 18)
     }
 
-    private var dueBar: some View {
+    @ViewBuilder private var dueBar: some View {
         let due = store.dueCards(in: store.allCards)
-        return Group {
-            if due.isEmpty {
-                Text("Nothing due. Pick a subject to study.").font(.subheadline).foregroundStyle(.secondary)
-                    .frame(maxWidth: .infinity, minHeight: 44).glassCapsule()
-            } else {
-                Button { quiz = QuizScope(id: "due", name: "Due today", cards: due) } label: {
-                    Label("Review \(due.count) due cards", systemImage: "play.fill").font(.headline)
-                        .frame(maxWidth: .infinity, minHeight: 36)
-                }
-                .prominentGlassButton()
-                .controlSize(.large)
+        if !due.isEmpty {
+            Button { quiz = QuizScope(id: "due", name: "Due today", cards: due) } label: {
+                Label("Review \(due.count) due cards", systemImage: "play.fill").font(.headline)
+                    .frame(maxWidth: .infinity, minHeight: 36)
             }
+            .buttonStyle(.borderedProminent)
+            .controlSize(.large)
+            .padding(.horizontal, 16).padding(.vertical, 6)
         }
-        .padding(.horizontal, 16).padding(.vertical, 6)
     }
 }
 

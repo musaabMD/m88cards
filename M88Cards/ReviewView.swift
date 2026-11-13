@@ -48,22 +48,21 @@ struct ReviewView: View {
                 ContentUnavailableView(search.isEmpty ? "No \(bucket.rawValue.lowercased()) cards yet" : "No matches", systemImage: "tray")
                     .listRowBackground(Color.clear)
             }
-            Color.clear.frame(height: 60).listRowBackground(Color.clear)
         }
         .listStyle(.insetGrouped)
         .navigationTitle("Review")
         .navigationBarTitleDisplayMode(.inline)
-        .searchable(text: $search, prompt: "Search question or answer")
-        .overlay(alignment: .bottomTrailing) {
+        .searchable(text: $search, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search question or answer")
+        .safeAreaInset(edge: .bottom) {
             if !rows.isEmpty {
                 Button {
                     quiz = QuizScope(id: "review-\(bucket.rawValue)", name: "\(bucket.rawValue) cards", cards: rows.map(\.card))
                 } label: {
-                    Label("Quiz \(rows.count)", systemImage: "play.fill").font(.headline).padding(.horizontal, 6).padding(.vertical, 8)
+                    Label("Quiz \(rows.count) cards", systemImage: "play.fill").font(.headline).frame(maxWidth: .infinity, minHeight: 36)
                 }
-                .prominentGlassButton()
+                .buttonStyle(.borderedProminent)
                 .controlSize(.large)
-                .padding(.trailing, 20).padding(.bottom, 16)
+                .padding(.horizontal, 16).padding(.vertical, 6)
             }
         }
         .fullScreenCover(item: $quiz) { scope in QuizView(session: QuizSession(scope: scope)) }

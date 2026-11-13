@@ -16,6 +16,7 @@
 		B1E34D3215B190E328B47B18 /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FE8323E63E04FBE3BC9DFE /* TopicView.swift */; };
 		B825F80F6F7941A8BCA69A3A /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FCCA5ACAEC3A91E8B11055 /* QuizView.swift */; };
 		C25326045ADEA5F2D00FABE4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9FCC8C7D17DD9E99994673 /* Store.swift */; };
+		C909319A5CC5934C4BF9FDEB /* Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD4F3429061DC4FC4EC85DA /* Sync.swift */; };
 		CDF045BB0641C0E324501C5F /* M88CardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2BB1AC0F4DB811AF00719C /* M88CardsApp.swift */; };
 		DBD3934698B27B982286F418 /* QuizSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CE1EDE7C1220B0337DBC25 /* QuizSession.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		034C9757E4B49C8AD027F398 /* content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = content; sourceTree = SOURCE_ROOT; };
 		0DE7CAC82E6DB3964C8E1DC3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0E2BB1AC0F4DB811AF00719C /* M88CardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M88CardsApp.swift; sourceTree = "<group>"; };
+		5CD4F3429061DC4FC4EC85DA /* Sync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sync.swift; sourceTree = "<group>"; };
 		5D2B44D8250F7120BD750ABB /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		62D82A71A2FF8447A05C29E9 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		75CE1EDE7C1220B0337DBC25 /* QuizSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSession.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 				62D82A71A2FF8447A05C29E9 /* ReviewView.swift */,
 				5D2B44D8250F7120BD750ABB /* ScoreView.swift */,
 				FF9FCC8C7D17DD9E99994673 /* Store.swift */,
+				5CD4F3429061DC4FC4EC85DA /* Sync.swift */,
 				A1FE8323E63E04FBE3BC9DFE /* TopicView.swift */,
 			);
 			path = M88Cards;
@@ -103,6 +106,7 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					8A79EA92CFC4C79D207B5817 = {
+						DevelopmentTeam = UHF6JJ7Z6G;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,6 +155,7 @@
 				83FDB2261B545B6F53D85559 /* ReviewView.swift in Sources */,
 				4A2A8D9DFDDAF37D88357273 /* ScoreView.swift in Sources */,
 				C25326045ADEA5F2D00FABE4 /* Store.swift in Sources */,
+				C909319A5CC5934C4BF9FDEB /* Sync.swift in Sources */,
 				B1E34D3215B190E328B47B18 /* TopicView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +201,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = UHF6JJ7Z6G;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -265,6 +271,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = UHF6JJ7Z6G;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;

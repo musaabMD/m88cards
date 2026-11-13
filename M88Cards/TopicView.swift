@@ -5,6 +5,7 @@ struct TopicView: View {
     let topic: Topic
     @State private var filter: Filter = .all
     @State private var quiz: QuizScope?
+    @State private var search = ""
 
     enum Filter: String, CaseIterable, Identifiable {
         case all = "All", due = "Due", missed = "Again", hard = "Hard", new = "New"
@@ -12,7 +13,9 @@ struct TopicView: View {
     }
 
     private var cards: [Card] {
-        topic.cards.filter { c in
+        let q = search.trimmingCharacters(in: .whitespaces).lowercased()
+        return topic.cards.filter { c in
+            if !q.isEmpty && !(c.q.lowercased().contains(q) || c.a.lowercased().contains(q)) { return false }
             let s = store.state(for: c)
             switch filter {
             case .all: return true
@@ -30,10 +33,6 @@ struct TopicView: View {
                 ForEach(cards) { card in CardRow(card: card, status: store.state(for: card).status) }
             } header: {
                 VStack(alignment: .leading, spacing: 10) {
-                    if let d = topic.desc {
-                        Text(d).font(.subheadline).foregroundStyle(.secondary).textCase(nil)
-                    }
-                    Text(summary).font(.footnote).foregroundStyle(.secondary).textCase(nil)
                     Picker("Filter", selection: $filter) {
                         ForEach(Filter.allCases) { Text($0.rawValue).tag($0) }
                     }
@@ -50,21 +49,21 @@ struct TopicView: View {
             if cards.isEmpty {
                 Text("No cards here yet.").foregroundStyle(.secondary).frame(maxWidth: .infinity).listRowBackground(Color.clear)
             }
-            Color.clear.frame(height: 60).listRowBackground(Color.clear)
         }
         .listStyle(.insetGrouped)
         .navigationTitle(topic.name)
         .navigationBarTitleDisplayMode(.inline)
-        .overlay(alignment: .bottomTrailing) {
+        .searchable(text: $search, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search this topic")
+        .safeAreaInset(edge: .bottom) {
             Button {
                 let set = cards.isEmpty ? topic.cards : cards
                 quiz = QuizScope(id: topic.id, name: topic.name, cards: set)
             } label: {
-                Label("Quiz me", systemImage: "play.fill").font(.headline).padding(.horizontal, 6).padding(.vertical, 8)
+                Label("Quiz me", systemImage: "play.fill").font(.headline).frame(maxWidth: .infinity, minHeight: 36)
             }
-            .prominentGlassButton()
+            .buttonStyle(.borderedProminent)
             .controlSize(.large)
-            .padding(.trailing, 20).padding(.bottom, 16)
+            .padding(.horizontal, 16).padding(.vertical, 6)
         }
         .toolbar {
             Menu {
@@ -72,15 +71,6 @@ struct TopicView: View {
             } label: { Image(systemName: "ellipsis") }
         }
         .fullScreenCover(item: $quiz) { scope in QuizView(session: QuizSession(scope: scope)) }
-    }
-
-    private var summary: String {
-        let learned = topic.cards.filter { store.state(for: $0).status == .learned }.count
-        let due = store.dueCards(in: topic.cards).count
-        var parts = ["\(topic.cards.count) cards", "\(learned) learned"]
-        if due > 0 { parts.append("\(due) due") }
-        if let best = store.bestPercent(scopeID: topic.id) { parts.append("best \(best)%") }
-        return parts.joined(separator: " · ")
     }
 }
 

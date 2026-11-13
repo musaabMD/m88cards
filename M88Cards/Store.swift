@@ -15,7 +15,7 @@ final class Store {
         try? fm.createDirectory(at: dir, withIntermediateDirectories: true)
         return dir.appendingPathComponent("progress.json")
     }
-    private var importedDecksDir: URL {
+    var importedDecksDir: URL {
         let dir = fm.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("Decks")
         try? fm.createDirectory(at: dir, withIntermediateDirectories: true)
         return dir
