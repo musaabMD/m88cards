@@ -1,4 +1,4 @@
-# M88 Cards
+# 88Cards
 
 Personal iOS flashcard app (SwiftUI, iOS 17+). Subjects → subtopics → cards, a Quizlet-style
 question | answer list per subtopic, and an Anki-style quiz (Again / Hard / Good / Easy, SM-2 scheduling).
